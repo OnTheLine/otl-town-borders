@@ -1,0 +1,80 @@
+<!doctype><html><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Towns in Hartford County</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Load Leaflet from CDN-->
+  		<link rel="stylesheet" href="http://cdn.jsdelivr.net/leaflet/0.7.3/leaflet.css" />
+  		<script src="http://cdn.jsdelivr.net/leaflet/0.7.3/leaflet.js"></script>
+  <!-- load geojson map files -->
+      <script type="text/javascript" src="1869.js"></script>
+      <script type="text/javascript" src="1871.js"></script>
+  <!-- local style -->
+      <style type="text/css">
+        body { margin:0; padding:0; }
+    	#map { position: absolute; top:0; bottom:0; right:0; left:0; }
+      </style>
+</head>
+<body>
+  <div id="map" style="width: 700px; height: 100%;"></div>
+
+  <script type="text/JavaScript">
+
+  var cartoDB = new L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
+  });
+
+  // style the town geojson outlines
+    function style(feature) {
+      return {
+          color: 'red',
+          weight: 1,
+          fillOpacity: 0
+      };
+    }
+
+    var map1869 = L.geoJson(borders1869, {
+      style: style,
+      onEachFeature: function( feature, layer ){
+        layer.bindPopup(feature.properties.Town)
+      }
+    });
+    var map1871 = L.geoJson(borders1871, {
+      style: style,
+      onEachFeature: function( feature, layer ){
+        layer.bindPopup(feature.properties.Town)
+      }
+    });
+
+    var map = new L.map('map', {
+        center: new L.LatLng(41.76, -72.69),
+        zoom: 10,
+        layers: [cartoDB], // show layers by default, can include overlays
+        zoomControl: false  // new zoom control in different position below
+    });
+    // customize source link to your GitHub repo
+      map.attributionControl
+      .setPrefix('View <a href="http://github.com/jackdougherty/otl-historical-town-borders">open-source code on GitHub</a>, created with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
+
+      var baseMaps = {
+        "CartoDB": cartoDB,
+      };
+      var overlayMaps = {
+        "1869 event": map1869,
+        "1871 event": map1871
+      };
+
+  		L.control.layers(baseMaps, overlayMaps, {
+        position: 'topleft',
+        collapsed: false    // changed to false to open on startup
+      }).addTo(map);
+
+      // Display a map scale and reposition zoom
+        L.control.scale({position: 'bottomleft'}).addTo(map);
+	       new L.Control.Zoom({ position: 'topright' }).addTo(map);
+
+  	</script>
+  </body>
+  </html>
