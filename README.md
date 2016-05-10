@@ -1,18 +1,33 @@
 # otl-historical-town-borders
-testing Odyssey.js with JavaScript slide triggers
+Scroll-driven story map, with narrative text and multiple GeoJSON layers
 
-## Goal
-- to build a simple storymap with JavaScript triggers to include Leaflet map objects, such as geoJson files (or .js files like the ones in this folder)
+## Demo
+http://jackdougherty.github.io/otl-historical-town-borders/index.html
 
-## Odyssey.js API JavaScript documentation
-- http://cartodb.github.io/odyssey.js/documentation/
+## Based on
+- http://github.com/jackdougherty/leaflet-storymap-layers
 
-## A complex storymap that does this:
-- https://github.com/clhenrick/BushwickCommunityMap
-- http://clhenrick.github.io/BushwickCommunityMap/
-- https://chenrickmfadt.wordpress.com/tag/odyssey-js/
+## Credits
+- Thanks @ilyankou for coding the add/remove layers with the scrolling interface  
+- Adapted from MUX Lab, Map Effects 100: https://github.com/muxlab/map-effects-100, see http://muxlab.github.io/map-effects-100/Leaflet/11_scroll-driven-map-navigation.html
 
-see clhenrick's files on github
-- index
-- js/main.js
-- js/intro.js
+## To create individual map layers for this map
+- start with present-day polygon map and go backwards in time
+- create CSV of prior year towns, and use Mapshaper.org
+  - join CT-towns-merged.csv keys=town,town
+  - dissolve merged
+
+
+## Create your own version
+- Start with map.csv template and add chapters, descriptions, zoom levels, center coordinates, images, layers
+- Convert the map.csv into map.geojson with http://geojson.io
+- Upload additional GeoJSON layer files (such as boundaries to be displayed) into layer folder
+- See more details (to come) in http://DataVizForAll.org
+
+## To Do
+- Ilya's note: If for some reason the last chapter doesn't get active (the case for big screen sizes), replace value of areaTop in script.js from -100 to -200 or more.
+- remove my placeholder images and create a richer story
+- remove unnecessary files from the template and move to otl-version
+- add polygon styling, display feature properties via click or hover
+- add instructions in DataVizForAll.org
+- explain how to add markers if desired

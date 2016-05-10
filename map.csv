@@ -1,0 +1,5 @@
+id,chapter,zoom,layer,image,description,lon,lat
+1,1858,11,layer/layer1858.geojson,img/image.png,East Granby incorporated from Granby and Windsor Locks,-72.734,41.9457
+2,1869,11,layer/layer1869.geojson,img/image.png,Plainville incorporated from Farmington in 1869,-72.863,41.675
+3,1871,11,layer/layer1871.geojson,img/image.png,Newington incorporated from Wethersfield in 1871,-72.73,41.68
+4,Today,10,layer/layer1871.geojson,img/image.png,Hartford County as it exists today,-72.717,41.8
