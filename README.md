@@ -26,7 +26,27 @@ http://jackdougherty.github.io/otl-historical-town-borders/index.html
   - rename-fields Town=Merged
 - for years when a town was incorporated from two towns (eg 1858 East Granby came from Granby and Windsor Locks), used geojson.io map editor button to manually drag both boundaries into place, as shown on historical map
 
-  - Later, try to add this http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?service=WMS&version=1.1.0&request=GetMap&layers=MAGIC:HartfordCounty_Woodford_1855&styles=&bbox=-73.2127567185954,41.327786392292275,-72.24597452643688,42.273108007408794&width=768&height=750&srs=EPSG:4326&format=application/openlayers
+## MAGIC WMS historical map layers to consider
+
+- 1792 Blodget
+http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?service=WMS&version=1.1.0&request=GetMap&layers=MAGIC:1792_Blodget&styles=&bbox=-73.79212017731558,40.746652042182845,-71.622700316519,42.13667880169626&width=768&height=492&srs=EPSG:4326&format=application/openlayers
+
+- 1795 Doolittle (use)
+http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?service=WMS&version=1.1.0&request=GetMap&layers=MAGIC:Connecticut_Doolittle_1795&styles=&bbox=-73.9224412221173,40.79874366827494,-71.5702012221173,42.17902366827494&width=768&height=450&srs=EPSG:4326&format=application/openlayers
+
+- 1797 Doolittle
+http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?service=WMS&version=1.1.0&request=GetMap&layers=MAGIC:Connecticut_Doolittle_1797&styles=&bbox=-73.89549101846971,40.7188080233761,-71.56849301846972,42.231240023376095&width=768&height=499&srs=EPSG:4326&format=application/openlayers
+
+- 1796 Tanner
+http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?service=WMS&version=1.1.0&request=GetMap&layers=MAGIC:Connecticut_Tanner_1796&styles=&bbox=-73.97467578550467,40.6754746928396,-71.55141978550468,42.216340692839594&width=768&height=488&srs=EPSG:4326&format=application/openlayers
+
+- 1796 Sotzmann
+http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?service=WMS&version=1.1.0&request=GetMap&layers=MAGIC:Connecticut_Sotzmann_1796&styles=&bbox=-73.82097063567721,40.773271453148524,-71.60172163567721,42.16310045314852&width=768&height=480&srs=EPSG:4326&format=application/openlayers
+
+- 1811 Warren (use)
+http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?service=WMS&version=1.1.0&request=GetMap&layers=MAGIC:1811_Warren&styles=&bbox=-73.89135389600216,40.716840125072665,-71.55342102041162,42.145477391639&width=768&height=469&srs=EPSG:4326&format=application/openlayers
+
+- 1855 Woodford (use) http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?service=WMS&version=1.1.0&request=GetMap&layers=MAGIC:HartfordCounty_Woodford_1855&styles=&bbox=-73.2127567185954,41.327786392292275,-72.24597452643688,42.273108007408794&width=768&height=750&srs=EPSG:4326&format=application/openlayers
 
 
 ## To Do
