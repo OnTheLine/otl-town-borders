@@ -1,5 +1,7 @@
 id,chapter,zoom,layer,image,description,lon,lat
-1,1858,11,layer/layer1858.geojson,img/image.png,East Granby incorporated from Granby and Windsor Locks,-72.734,41.9457
-2,1869,11,layer/layer1869.geojson,img/image.png,Plainville incorporated from Farmington in 1869,-72.863,41.675
-3,1871,11,layer/layer1871.geojson,img/image.png,Newington incorporated from Wethersfield in 1871,-72.73,41.68
-4,Today,10,layer/layer1871.geojson,img/image.png,Hartford County as it exists today,-72.717,41.8
+1,1854 repeat,11,layer/layer1854.geojson,img/image.png,New Britain incorporated from Berlin in 1850,-72.781,41.684
+2,1854,11,layer/layer1854.geojson,img/image.png,"West Hartford incorporated from Hartford, and Windsor Locks incorporated from Windsor, in 1854",-72.711,41.839
+3,1858,11,layer/layer1858.geojson,img/image.png,East Granby incorporated from Granby and Windsor Locks in 1858,-72.734,41.9457
+4,1869,11,layer/layer1869.geojson,img/image.png,Plainville incorporated from Farmington in 1869,-72.863,41.675
+5,1871,11,layer/layer1871.geojson,img/image.png,Newington incorporated from Wethersfield in 1871,-72.73,41.68
+6,Today,10,layer/layer1871.geojson,img/image.png,The towns of Hartford County as they have existed from 1871 to the present,-72.717,41.8
