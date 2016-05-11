@@ -30,8 +30,8 @@ Scroll-driven story map, with narrative text and multiple GeoJSON layers
 
 
 ## To Do
+- Add WMS tiles to the map story, to insert at appropriate times when maps were published
 - Create index-frame version with caption and source info
 - Find better boundary source info for West Hartford/Farmington/Bloomfield
-- Add WMS layers to the map story, to insert at appropriate times when maps were published
 - I hard-coded fillColor, but asked Ilya for help with fillColor issue
 - Ilya's note: If for some reason the last chapter doesn't get active (the case for big screen sizes), replace value of areaTop in script.js from -100 to -200 or more.
