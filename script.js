@@ -7,22 +7,33 @@ $('div#contents').scroll(function() {
   scrollPosition = $(this).scrollTop();
 });
 
+// Any values not listed in the ranges below displays as the last color (blank)
+function getFillColor(d) {
+  return  d == 1 ? 'red' :
+          'white';
+}
+
+function style(feature) {
+  return {
+    color: 'blue',
+    fillColor: getFillColor(feature.properties.Flag),
+    weight: 2,
+    fillOpacity: 0.2
+  };
+}
+
+
 // This adds data as a new layer to the map
 function refreshLayer(data, map, coord, zoom) {
   var dataLayer = L.geoJson(data, {
-      style: function (feature) {
-        var fillColor,
-          layerYear = feature.properties.year;
-          chapter = feature.properties.chapter; // need help, because I'm trying to call other layer outside of this function
-        if (layerYear == chapter) fillColor = 'red';
-        return {
-          'fillColor': fillColor // by method above
-        }
-      }
+      style: style,
+      //onEachFeature: onEachFeature
   });
   dataLayer.addTo(map);
   map.setView([coord[1], coord[0]], zoom);
 }
+
+
 
 function initMap() {
   // This creates the Leaflet map with a generic start point, because GeoJSON layer includes all coordinates
@@ -88,9 +99,9 @@ function initMap() {
             class: 'chapter-header'
           });
 
-          var image = $('<img>', {
-            src: feature.properties['image'],
-          });
+          // var image = $('<img>', {
+          //   src: feature.properties['image'],
+          // });
 
           // var source = $('<a>', {
           //   text: feature.properties['source-credit'],
@@ -109,13 +120,13 @@ function initMap() {
             class: 'image-container'
           });
 
-          var imgHolder = $('<div></div', {
-            class: 'img-holder'
-          });
+          // var imgHolder = $('<div></div', {
+          //   class: 'img-holder'
+          // });
+          //
+          // imgHolder.append(image);
 
-          imgHolder.append(image);
-
-          container.append(chapter).append(imgHolder).append(description);
+          container.append(chapter).append(description);
           $('#contents').append(container);
 
           var i;

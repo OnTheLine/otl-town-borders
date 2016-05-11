@@ -15,7 +15,7 @@ body {
 #narration {
     position: absolute;
     width: 30vw;
-    min-width: 300px;
+    min-width: 200px; /*originally 300px */
     right: 0px;
     height: 100vh;
     overflow: auto;
@@ -60,7 +60,7 @@ body {
     top: 0px;
     background-color: white;
     width: 30vw;
-    min-width: 300px;
+    min-width: 200px; /* originally 300px */
     z-index: 100;
     margin: 0px;
     padding: 0px;
