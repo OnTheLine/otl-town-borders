@@ -43,19 +43,13 @@ function initMap() {
     scrollWheelZoom: false
   });
 
-  // This displays a base layer map (other options available)
-  var lightAll = new L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
-  }).addTo(map);
-
   // This customizes link to view source code; add your own GitHub repository
   map.attributionControl
   .setPrefix('View <a href="http://github.com/jackdougherty/otl-historical-town-borders" target="_blank">code on GitHub</a>, created with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
 
-  // global variable with (null, null) allows indiv layers to be added inside functions below
-  var controlLayers = L.control.layers( null, null, {
-    position: "bottomright", // suggested: bottomright for CT (in Long Island Sound); topleft for Hartford region
-    collapsed: false // false = open by default
+  // This displays the default tile layer
+  var lightAll = new L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
   }).addTo(map);
 
   // tileLayer.WMS as a baselayer - see http://leafletjs.com/reference.html#tilelayer-wms
@@ -67,7 +61,6 @@ function initMap() {
     transparent: true,
     attribution: '1795 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
   });
-  controlLayers.addBaseLayer(map1795, '1795 Doolittle map');
 
   var map1811 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
     layers: 'MAGIC:1811_Warren',
@@ -76,7 +69,6 @@ function initMap() {
     transparent: true,
     attribution: '1811 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
   });
-  controlLayers.addBaseLayer(map1811, '1811 Warren map');
 
   var map1855 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
     layers: 'MAGIC:HartfordCounty_Woodford_1855',
@@ -85,7 +77,6 @@ function initMap() {
     transparent: true,
     attribution: '1855 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
   });
-  controlLayers.addBaseLayer(map1855, '1855 Woodford map');
 
   // This loads the GeoJSON map data file from a local folder
   $.getJSON('map.geojson', function(data) {
