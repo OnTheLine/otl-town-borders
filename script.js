@@ -35,8 +35,8 @@ function refreshLayer(data, map, coord, zoom) {
 function initMap() {
   // Although all coordinates and zoom are pulled from map.geojson, insert initial data here for smooth startup
   var map = L.map('map', {
-    center: [0, 0],
-    zoom: 5,
+    center: [41.79, -72.717],
+    zoom: 10,
     scrollWheelZoom: false
   });
 
