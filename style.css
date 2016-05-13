@@ -135,3 +135,8 @@ p.description {
     opacity: 0.3;
     background-color: white;
 }
+
+/* option to hide legend control layers, since radio buttons are triggered by jQuery
+.leaflet-control-layers {
+    display: none !important;
+}*/
