@@ -30,7 +30,7 @@ Scroll-driven story map, with narrative text and ability to insert tile layers a
 
 ## To insert tile layers
 - in this version, the tile layers must be coded into the script.js file, with variable names
-- in map.csv, insert variable names into the tile column; avoid blanks and misspellings
+- in map.csv, insert tile layer legend display names into the tile column; avoid blanks and misspellings
 - Thanks @ilyankou for creative solution for using jQuery to imitate "click" in legend control layers radio button to change tile layers; option to hide legend in style.css
 
 ## Decide on text format
