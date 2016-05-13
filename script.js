@@ -7,7 +7,7 @@ $('div#contents').scroll(function() {
   scrollPosition = $(this).scrollTop();
 });
 
-// Any values not listed in the ranges below displays as the last color (blank)
+// This highlights selected GeoJSON polygons marked with Flag = 1; values not listed in ranges below display as the last color (white)
 function getFillColor(d) {
   return  d == 1 ? 'red' :
           'white';
@@ -22,21 +22,18 @@ function style(feature) {
   };
 }
 
-
 // This adds data as a new layer to the map
 function refreshLayer(data, map, coord, zoom) {
   var dataLayer = L.geoJson(data, {
       style: style,
-      //onEachFeature: onEachFeature
+      //onEachFeature: onEachFeature // future option to show town name on click or hover
   });
   dataLayer.addTo(map);
   map.setView([coord[1], coord[0]], zoom);
 }
 
-
-
 function initMap() {
-  // This creates the Leaflet map with a generic start point, because GeoJSON layer includes all coordinates
+  // Although all coordinates and zoom are pulled from map.geojson, insert initial data here for smooth startup
   var map = L.map('map', {
     center: [0, 0],
     zoom: 5,
@@ -45,11 +42,12 @@ function initMap() {
 
   // This customizes link to view source code; add your own GitHub repository
   map.attributionControl
-  .setPrefix('View <a href="http://github.com/jackdougherty/otl-historical-town-borders-wms-buttons" target="_blank">code on GitHub</a>, created with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
+  .setPrefix('View <a href="http://github.com/jackdougherty/otl-historical-town-borders" target="_blank">code on GitHub</a>, created with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
 
   // Legend control layers - global variable with (null, null) allows indiv layers to be added inside functions below
+  // See style.css code that intentionally hides legend control in this version
   var controlLayers = L.control.layers( null, null, {
-    position: "bottomright", // suggested: bottomright for CT (in Long Island Sound); topleft for Hartford region
+    position: "bottomright",
     collapsed: false // false = open by default
   }).addTo(map);
 
@@ -57,7 +55,7 @@ function initMap() {
   var lightAll = new L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
   }).addTo(map);
-  controlLayers.addBaseLayer(lightAll, 'lightAll default');
+  controlLayers.addBaseLayer(lightAll, 'default');
 
   // tileLayer.WMS as a baselayer - see http://leafletjs.com/reference.html#tilelayer-wms
   // UConn MAGIC WMS settings - see http://geoserver.lib.uconn.edu:8080/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.demo.MapPreviewPage
@@ -68,7 +66,7 @@ function initMap() {
     transparent: true,
     attribution: '1795 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
   });
-  controlLayers.addBaseLayer(map1795, 'map1795');
+  controlLayers.addBaseLayer(map1795, '1795 map');
 
   var map1811 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
     layers: 'MAGIC:1811_Warren',
@@ -77,7 +75,7 @@ function initMap() {
     transparent: true,
     attribution: '1811 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
   });
-  controlLayers.addBaseLayer(map1811, 'map1811');
+  controlLayers.addBaseLayer(map1811, '1811 map');
 
   var map1855 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
     layers: 'MAGIC:HartfordCounty_Woodford_1855',
@@ -87,7 +85,7 @@ function initMap() {
     attribution: '1855 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
   });
   map1855.addTo(map);
-  controlLayers.addBaseLayer(map1855, 'map1855');
+  controlLayers.addBaseLayer(map1855, '1855 map');
 
   // This loads the GeoJSON map data file from a local folder
   $.getJSON('map.geojson', function(data) {
@@ -101,6 +99,7 @@ function initMap() {
             class: 'chapter-header'
           });
 
+          // images and source credits been commented-out from this version
           // var image = $('<img>', {
           //   src: feature.properties['image'],
           // });
@@ -128,6 +127,9 @@ function initMap() {
           //
           // imgHolder.append(image);
 
+          // imgHolder.append(image);
+          // container.append(chapter).append(imgHolder).append(source).append(description);
+
           container.append(chapter).append(description);
           $('#contents').append(container);
 
@@ -150,7 +152,7 @@ function initMap() {
                 $('.image-container').removeClass("inFocus").addClass("outFocus");
                 $('div#container' + feature.properties['id']).addClass("inFocus").removeClass("outFocus");
 
-                // This removes all layers besides the base layer
+                // This removes all layers except the default base layer; change name if necessary
                 map.eachLayer(function (layer) {
                   if (layer != lightAll) {
                     map.removeLayer(layer);
@@ -164,7 +166,7 @@ function initMap() {
                   refreshLayer(data, map, coord, zoom);
                 });
 
-                // Loading an appropriate tile by imitating a click onto the control span
+                // This loads the tile layer from map.geojson by imitating a click to the legend control span
                 var tile = feature.properties['tile'];
                 $($('span:contains(" ' + tile + '")').get(0)).siblings("input").click();
               }
@@ -175,7 +177,7 @@ function initMap() {
       }
     });
 
-    $('#contents').append("<div class='space-at-the-bottom'><a href='#space-at-the-top'><i class='fa fa-chevron-up'></i></br><small>Go to Top</small></a></div>");
+    $('#contents').append("<div class='space-at-the-bottom'><a href='#space-at-the-top'><i class='fa fa-chevron-up'></i></br><small>Top</small></a></div>");
 
   });
 }
