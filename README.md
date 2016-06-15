@@ -2,7 +2,7 @@
 Scroll-driven story map, with narrative text and ability to insert tile layers and GeoJSON layers
 
 ## Links
-- Demo http://jackdougherty.github.io/otl-historical-town-borders/index.html
+- Demo http://jackdougherty.github.io/otl-historical-town-borders/index-frame.html
 - iframe [iframe src='http://jackdougherty.github.io/otl-historical-town-borders/index.html' width='100%' height=525]
 
 ## Based on
@@ -17,6 +17,7 @@ Scroll-driven story map, with narrative text and ability to insert tile layers a
 - Convert the map.csv into map.geojson with http://geojson.io
 - Upload GeoJSON layer files (such as boundaries to be displayed) into layer folder
 - See more details (to come) in http://DataVizForAll.org
+- Note: If for some reason the last chapter doesn't get active (the case for big screen sizes), replace value of areaTop in script.js from -100 to -200 or more.
 
 ## To create and insert GeoJSON layers
 - start with present-day polygon map and go backwards in time to add towns back into their origin polygons
@@ -27,13 +28,19 @@ Scroll-driven story map, with narrative text and ability to insert tile layers a
   - join year18xx.csv keys=Merged,Town
   - rename-fields Town=Merged
 - for years when a town was incorporated from two towns (eg 1858 East Granby came from Granby and Windsor Locks), used geojson.io map editor button to manually drag both boundaries into place, as shown on historical map
+- for years when town boundaries are significantly redrawn, import GeoJSON boundary into QGIS, resave as shapefile layer, use QGIS editing tools to redraw lines, export as GeoJSON (see my more detailed notes)
 
 ## To insert tile layers
 - in this version, the tile layers must be coded into the script.js file, with variable names
 - in map.csv, insert tile layer legend display names into the tile column; avoid blanks and misspellings
 - Thanks @ilyankou for creative solution for using jQuery to imitate "click" in legend control layers radio button to change tile layers; option to hide legend in style.css
 
-## Decide on text format
+## To Do
+- Ask MAGIC about best sources for me to draw map boundaries, using their WMS layers in QGIS
+- Go back and revise map boundaries for 1835-54 West Hartford/Farmington/Bloomfield
+- Add onEachFeature styling to show town name on click or hover
+
+## Decide on best format for text, from CT State Register, http://www.ct.gov/sots/cwp/view.asp?a=3188&q=392440
 
 The three Constitution towns:
 - Windsor settled 1633, named 1637
@@ -67,10 +74,3 @@ Towns carved out of existing towns (or annexed from Massachusetts)
 - East Granby, incorporated from Granby and Windsor Locks, 1858.
 - Plainville, incorporated from Farmington, 1869.
 - Newington, incorporated from Wethersfield, 1871.
-
-
-## To Do
-- Revise map boundaries for 1835-54 West Hartford/Farmington/Bloomfield, with better source
-- Create index-frame version with caption and source info
-- Add onEachFeature styling to show town name on click or hover
-- Ilya's note: If for some reason the last chapter doesn't get active (the case for big screen sizes), replace value of areaTop in script.js from -100 to -200 or more.
