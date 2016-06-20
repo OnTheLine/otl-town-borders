@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Leaflet test map</title>
+    <!-- These lines load code from LeafletJS.com and JQuery.com online libraries to run the map -->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v1.0.0-rc.1/leaflet.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet/v1.0.0-rc.1/leaflet.js"></script>
+    <!-- These lines of Cascading Style Sheet (CSS) code position the map -->
+    <style>
+      body { margin:0; padding:0; }
+      #map { position: absolute; top:0; bottom:0; right:0; left:0; }
+    </style>
+  </head>
+  <body>
+    <!-- This section displays the map using HTML code-->
+    <div id="map"></div>
+    <!-- This section creates the map using JavaScript (.js) code -->
+    <script>
+    // set up the map center and zoom level
+    var map = L.map('map', {
+      center: [41.76, -72.67], // [41.5, -72.7] for Connecticut; [41.76, -72.67] for Hartford county or city
+      zoom: 10, // zoom 9 for Connecticut; 10 for Hartford county, 12 for Hartford city
+    });
+
+    // customize below to display link to YOUR GitHub repository
+    map.attributionControl
+    .setPrefix('View <a href="http://github.com/jackdougherty/otl-historical-town-borders">code on GitHub</a>, created with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
+
+    // optional: add legend to toggle any baselayers and/or overlays
+    // global variable with (null, null) allows indiv layers to be added inside functions below
+    var controlLayers = L.control.layers( null, null, {
+      position: "bottomright", // position can be modified
+      collapsed: false // false = open by default
+    }).addTo(map);
+
+
+    /* BASELAYERS */
+    // use common baselayers below, delete, or add more with plain JavaScript from http://leaflet-extras.github.io/leaflet-providers/preview/
+    // .addTo(map); -- suffix displays baselayer by default
+    // controlLayers.addBaseLayer (variableName, 'label'); -- adds baselayer and label to legend; omit if only one baselayer with no toggle desired
+    var lightAll = new L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
+    }).addTo(map); //this displays layer by default
+    controlLayers.addBaseLayer(lightAll, 'CartoDB LightAll'); // change the display name
+
+    // UConn MAGIC WMS settings - see http://geoserver.lib.uconn.edu:8080/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.demo.MapPreviewPage
+    var map1758 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
+      layers: 'MAGIC:Kitchin_1758',
+      format: 'image/png',
+      version: '1.1.0',
+      transparent: true,
+      attribution: '1758 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
+    });
+    controlLayers.addBaseLayer(map1758, '1758 map');
+
+    var map1795 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
+      layers: 'MAGIC:Connecticut_Doolittle_1795',
+      format: 'image/png',
+      version: '1.1.0',
+      transparent: true,
+      attribution: '1795 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
+    });
+    controlLayers.addBaseLayer(map1795, '1795 map');
+
+    var map1811 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
+      layers: 'MAGIC:1811_Warren',
+      format: 'image/png',
+      version: '1.1.0',
+      transparent: true,
+      attribution: '1811 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
+    });
+    controlLayers.addBaseLayer(map1811, '1811 map');
+
+    var map1855 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
+      layers: 'MAGIC:HartfordCounty_Woodford_1855',
+      format: 'image/png',
+      version: '1.1.0',
+      transparent: true,
+      attribution: '1855 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
+    });
+    controlLayers.addBaseLayer(map1855, '1855 map');
+
+    /* POLYGON OVERLAYS */
+    // Ways to load geoJSON polygon layers from local directory or remote server
+    // Different options for styling and interactivity
+
+    // load polygon data with clickable features from local directory
+    $.getJSON("polygons-towns.geojson", function (data) {   // insert pathname to your local directory file
+      var geoJsonLayer = L.geoJson(data, {
+        style: function (feature) {
+          return {
+            'color': 'red',
+            'weight': 2,
+            'fillColor': '#fff',
+            'fillOpacity': 0.2
+          }
+        },
+        onEachFeature: function( feature, layer) {
+          layer.bindPopup(feature.properties.Town) // change 'Town' to match your geojson property labels
+        }
+      }).addTo(map);  // insert ".addTo(map)" to display layer by default
+      controlLayers.addOverlay(geoJsonLayer, 'CT Towns (red polygons)');  // insert your 'Title' to add to legend
+    });
+
+    </script>
+  </body>
+</html>
