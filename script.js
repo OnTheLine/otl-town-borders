@@ -59,42 +59,41 @@ function initMap() {
 
   // tileLayer.WMS as a baselayer - see http://leafletjs.com/reference.html#tilelayer-wms
   // UConn MAGIC WMS settings - see http://geoserver.lib.uconn.edu:8080/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.demo.MapPreviewPage
-  var map1758 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
-    layers: 'MAGIC:Kitchin_1758',
-    format: 'image/png',
-    version: '1.1.0',
-    transparent: true,
-    attribution: '1758 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
+  // var map1758 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
+  //   layers: 'MAGIC:Kitchin_1758',
+  //   attribution: '1758 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
+  // });
+  // controlLayers.addBaseLayer(map1758, '1758 map');
+
+  var map1780 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
+    layers: 'MAGIC:Covens_1780',
+    attribution: '1780 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
   });
-  controlLayers.addBaseLayer(map1758, '1758 map');
+  controlLayers.addBaseLayer(map1780, '1780 map');
 
   var map1795 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
     layers: 'MAGIC:Connecticut_Doolittle_1795',
-    format: 'image/png',
-    version: '1.1.0',
-    transparent: true,
     attribution: '1795 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
   });
   controlLayers.addBaseLayer(map1795, '1795 map');
 
   var map1811 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
     layers: 'MAGIC:1811_Warren',
-    format: 'image/png',
-    version: '1.1.0',
-    transparent: true,
     attribution: '1811 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
   });
   controlLayers.addBaseLayer(map1811, '1811 map');
 
   var map1855 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
     layers: 'MAGIC:HartfordCounty_Woodford_1855',
-    format: 'image/png',
-    version: '1.1.0',
-    transparent: true,
     attribution: '1855 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
   });
-  map1855.addTo(map);
   controlLayers.addBaseLayer(map1855, '1855 map');
+
+  var map1893 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
+    layers: 'MAGIC:Hurd_1893_page_12_13',
+    attribution: '1893 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
+  });
+  controlLayers.addBaseLayer(map1893, '1893 map');
 
   // This loads the GeoJSON map data file from a local folder
   $.getJSON('map.geojson', function(data) {
