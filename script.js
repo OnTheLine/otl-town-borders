@@ -52,18 +52,18 @@ function initMap() {
   }).addTo(map);
 
   // This displays the default tile layer
-  var lightAll = new L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+  var lightAll = new L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
   }).addTo(map);
   controlLayers.addBaseLayer(lightAll, 'default');
 
   // tileLayer.WMS as a baselayer - see http://leafletjs.com/reference.html#tilelayer-wms
   // UConn MAGIC WMS settings - see http://geoserver.lib.uconn.edu:8080/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.demo.MapPreviewPage
-  // var map1758 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
-  //   layers: 'MAGIC:Kitchin_1758',
-  //   attribution: '1758 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
-  // });
-  // controlLayers.addBaseLayer(map1758, '1758 map');
+  var map1758 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
+    layers: 'MAGIC:Kitchin_1758',
+    attribution: '1758 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
+  });
+  controlLayers.addBaseLayer(map1758, '1758 map');
 
   var map1780 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
     layers: 'MAGIC:Covens_1780',
