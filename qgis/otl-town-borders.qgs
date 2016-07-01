@@ -3,7 +3,7 @@
   <title></title>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="county_outline_today20160624141109763" name="county-outline-today">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="year1823_copy20160701172537241" name="layer1803">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Hurd_1893_page_12_1320160624152238956" name="Hurd_1893_page_12_13">
@@ -15,13 +15,13 @@
     <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="HartfordCounty_Woodford_185520160624151822448" name="HartfordCounty_Woodford_1855">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="Mitchell_1850120160624144211382" name="Mitchell_18501">
+    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Mitchell_1850120160624144211382" name="Mitchell_18501">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Connecticut_Warren_181120160624143836760" name="Connecticut_Warren_1811">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Connecticut_Anderson_179920160624143737107" name="Connecticut_Anderson_1799">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="Connecticut_Anderson_179920160624143737107" name="Connecticut_Anderson_1799">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Connecticut_Sotzmann_179620160624143522021" name="Connecticut_Sotzmann_1796">
@@ -50,10 +50,10 @@
   <mapcanvas>
     <units>degrees</units>
     <extent>
-      <xmin>-73.27373814658929518</xmin>
-      <ymin>41.51596342590300281</ymin>
-      <xmax>-72.08000098431921288</xmax>
-      <ymax>42.04008968077658182</ymax>
+      <xmin>-73.04544574714601879</xmin>
+      <ymin>41.72393901486736922</ymin>
+      <xmax>-72.57585387461394077</xmax>
+      <ymax>41.99754596890889502</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
@@ -75,7 +75,6 @@
   <layer-tree-canvas>
     <custom-order enabled="0">
       <item>Connecticut_Griswold_162520160624140907614</item>
-      <item>county_outline_today20160624141109763</item>
       <item>Connecticut_Park_176620160624141653623</item>
       <item>Covens_178020160624141909406</item>
       <item>Connecticut_1792_Blodget20160624142558037</item>
@@ -88,12 +87,13 @@
       <item>HartfordCounty_Woodford_185520160624151822448</item>
       <item>Connecticut_Tackabury_185920160624152058542</item>
       <item>Hurd_1893_page_12_1320160624152238956</item>
+      <item>year1823_copy20160701172537241</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="county-outline-today" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="layer1803" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="county_outline_today20160624141109763" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="year1823_copy20160701172537241" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Hurd_1893_page_12_13" showFeatureCount="0">
@@ -111,9 +111,9 @@
         <legendlayerfile isInOverview="0" layerid="HartfordCounty_Woodford_185520160624151822448" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Mitchell_18501" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Mitchell_18501" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Mitchell_1850120160624144211382" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="Mitchell_1850120160624144211382" visible="0"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Connecticut_Warren_1811" showFeatureCount="0">
@@ -121,9 +121,9 @@
         <legendlayerfile isInOverview="0" layerid="Connecticut_Warren_181120160624143836760" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Connecticut_Anderson_1799" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Connecticut_Anderson_1799" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Connecticut_Anderson_179920160624143737107" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="Connecticut_Anderson_179920160624143737107" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Connecticut_Sotzmann_1796" showFeatureCount="0">
@@ -671,12 +671,12 @@
       <blendMode>0</blendMode>
     </maplayer>
     <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <id>county_outline_today20160624141109763</id>
-      <datasource>../layer/county-outline-today.geojson</datasource>
+      <id>year1823_copy20160701172537241</id>
+      <datasource>./year1823.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>county-outline-today</layername>
+      <layername>layer1803</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -698,13 +698,13 @@
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
-        <edittype widgetv2type="TextEdit" name="name">
+        <edittype widgetv2type="TextEdit" name="Town">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="styleUrl">
+        <edittype widgetv2type="TextEdit" name="Year">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="styleHash">
+        <edittype widgetv2type="TextEdit" name="Flag">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
@@ -718,10 +718,10 @@
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="31,120,180,255"/>
+              <prop k="outline_color" v="0,0,235,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="1.46"/>
-              <prop k="outline_width_unit" v="MM"/>
+              <prop k="outline_width" v="3"/>
+              <prop k="outline_width_unit" v="Pixel"/>
               <prop k="style" v="solid"/>
             </layer>
           </symbol>
@@ -873,7 +873,7 @@
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerTransparency>0</layerTransparency>
-      <displayfield>name</displayfield>
+      <displayfield>Town</displayfield>
       <label>0</label>
       <labelattributes>
         <label fieldname="" text="Label"/>
@@ -898,17 +898,18 @@
       <SingleCategoryDiagramRenderer diagramType="Pie">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="-4.65661e-10">
           <fontProperties description=".Helvetica Neue DeskInterface,13,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions/>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -960,13 +961,14 @@ def my_form_open(dialog, layer, feature):
     <Digitizing>
       <DefaultSnapToleranceUnit type="int">1</DefaultSnapToleranceUnit>
       <LayerSnappingList type="QStringList">
-        <value>county_outline_today20160624141109763</value>
+        <value>year1823_copy20160701172537241</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
         <value>enabled</value>
       </LayerSnappingEnabledList>
       <SnappingMode type="QString">current_layer</SnappingMode>
       <AvoidIntersectionsList type="QStringList"/>
+      <IntersectionSnapping type="bool">true</IntersectionSnapping>
       <LayerSnappingToleranceUnitList type="QStringList">
         <value>1</value>
       </LayerSnappingToleranceUnitList>
@@ -975,6 +977,7 @@ def my_form_open(dialog, layer, feature):
       </LayerSnapToList>
       <DefaultSnapType type="QString">to vertex and segment</DefaultSnapType>
       <DefaultSnapTolerance type="double">10</DefaultSnapTolerance>
+      <TopologicalEditing type="bool">true</TopologicalEditing>
       <LayerSnappingToleranceList type="QStringList">
         <value>10.000000</value>
       </LayerSnappingToleranceList>
