@@ -41,7 +41,6 @@ Scroll-driven story map, with narrative text and ability to insert tile layers a
 - Thanks @ilyankou for creative solution for using jQuery to imitate "click" in legend control layers radio button to change tile layers; option to hide legend in style.css
 
 ## To Do
-- Ask MAGIC about best sources for me to draw map boundaries, using their WMS layers in QGIS
 - Go back and revise map boundaries for 1835-54 West Hartford/Farmington/Bloomfield
 - Add onEachFeature styling to show town name on click or hover
 
@@ -128,6 +127,7 @@ The three Constitution towns:
 - Windsor settled 1633, named 1637
 - Wethersfield settled 1633, named 1637
 - Hartford founded 1633, settled 1635, named 1637
+* ADD Hartford 1640 map (drawn 1886?) https://www.flickr.com/photos/uconnlibrariesmagic/3836896031/
 Early new towns:
 - Farmington, settled 1640, incorporated and named 1645
 - Simsbury, settled and named, 1670
@@ -164,3 +164,9 @@ Towns carved out of existing towns (or annexed from Massachusetts)
 - Plainville, incorporated from Farmington, 1869.
 - Newington, incorporated from Wethersfield, 1871.
 - * MAGIC:Hurd_1893_12_13 (shows Newington)
+
+## notes
+- Town boundaries are estimated based on the best available digitized maps, and are not based on detailed archival records. Inexact lines include the 1850s boundary divisions between West Hartford, Farmington, Avon, and Bloomfield.
+
+## START again
+- with Marlborough
