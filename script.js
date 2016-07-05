@@ -7,7 +7,7 @@ $('div#contents').scroll(function() {
   scrollPosition = $(this).scrollTop();
 });
 
-// This highlights selected GeoJSON polygons marked with Flag = 1; values not listed in ranges below display as the last color (white)
+// This highlights selected GeoJSON polygons marked with flag = 1; values not listed in ranges below display as the last color (white)
 function getFillColor(d) {
   return  d == 1 ? 'red' :
           'white';
@@ -16,7 +16,7 @@ function getFillColor(d) {
 function style(feature) {
   return {
     color: 'blue',
-    fillColor: getFillColor(feature.properties.Flag),
+    fillColor: getFillColor(feature.properties.flag),
     weight: 2,
     fillOpacity: 0.2
   };
