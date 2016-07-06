@@ -41,7 +41,7 @@ Scroll-driven story map, with narrative text and ability to insert tile layers a
 
 ## To Do
 - display starIcon in script.js
-- Add onEachFeature hover feature to display town name in info window
+- Add onEachFeature hover feature to display town name in info window?
 
 ## Towns from source
 

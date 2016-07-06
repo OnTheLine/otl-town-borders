@@ -7,14 +7,6 @@ $('div#contents').scroll(function() {
   scrollPosition = $(this).scrollTop();
 });
 
-// GeoJSON border color = 1, 2... default
-function getColor(d) {
-  return  d == 1 ? 'red' :
-          d == 2 ? 'blue' :
-          d == 3 ? 'green' :
-          d == 4 ? 'black' :
-          'blue';
-}
 // GeoJSON fill color = 1, 2... default
 function getFillColor(d) {
   return  d == 1 ? 'red' :
@@ -26,7 +18,7 @@ function getFillColor(d) {
 
 function style(feature) {
   return {
-    color: getColor(feature.properties.border),
+    color: 'blue',
     fillColor: getFillColor(feature.properties.fill),
     weight: 2,
     fillOpacity: 0.2
