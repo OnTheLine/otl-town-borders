@@ -7,16 +7,27 @@ $('div#contents').scroll(function() {
   scrollPosition = $(this).scrollTop();
 });
 
-// This highlights selected GeoJSON polygons marked with flag = 1; values not listed in ranges below display as the last color (white)
+// GeoJSON border color = 1, 2... default
+function getColor(d) {
+  return  d == 1 ? 'red' :
+          d == 2 ? 'blue' :
+          d == 3 ? 'green' :
+          d == 4 ? 'black' :
+          'blue';
+}
+// GeoJSON fill color = 1, 2... default
 function getFillColor(d) {
   return  d == 1 ? 'red' :
+          d == 2 ? 'blue' :
+          d == 3 ? 'green' :
+          d == 4 ? 'white' :
           'white';
 }
 
 function style(feature) {
   return {
-    color: 'blue',
-    fillColor: getFillColor(feature.properties.flag),
+    color: getColor(feature.properties.border),
+    fillColor: getFillColor(feature.properties.fill),
     weight: 2,
     fillOpacity: 0.2
   };
@@ -147,8 +158,8 @@ function initMap() {
           });
 
           imgHolder.append(image);
-          
-          container.append(chapter).append(imgHolder).append(source).append(description);
+
+          container.append(chapter).append(description).append(imgHolder).append(source);
 
           $('#contents').append(container);
 

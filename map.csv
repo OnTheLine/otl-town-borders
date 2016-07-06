@@ -1,15 +1,5 @@
-id,chapter,zoom,tile,layer,image,source-credit,source-link,description,lon,lat
-1,circa 1625,10,present,,img/pending.png,Source: to come,http://ontheline.trincoll.edu,"map borders from 1630s-1835 to come, with revisions up to 1854",-72.717,41.79
-2,1758,10,1758 map,layer/layer2016outline.geojson,img/pending.png,Source: to come,http://ontheline.trincoll.edu,Kitchin 1758 WMS map layer ,-72.717,41.79
-3,1795,10,1795 map,layer/layer2016outline.geojson,img/pending.png,Source: to come,http://ontheline.trincoll.edu,"Doolittle's 1795 map matches the modern county outline, except for Marlborough",-72.717,41.79
-4,1811,10,1811 map,layer/layer1835.geojson,img/pending.png,Source: to come,http://ontheline.trincoll.edu,Hartford county as it appeared in Warren's 1811 map (borders from 1835 to be revised),-72.717,41.79
-5,1835,10,1811 map,layer/layer1835.geojson,img/pending.png,Source: to come,http://ontheline.trincoll.edu,"Bloomfield incorporated from Windsor, Farmington, and Simsbury in 1835-1843",-72.717,41.79
-6,1843,10,present,layer/layer1843.geojson,img/pending.png,Source: to come,http://ontheline.trincoll.edu,Rocky Hill incorporated from Wethersfield in 1843,-72.717,41.79
-7,1845,10,present,layer/layer1845.geojson,img/pending.png,Source: to come,http://ontheline.trincoll.edu,South Windsor incorporated from East Windsor in 1845,-72.717,41.79
-8,1850,10,present,layer/layer1850.geojson,img/pending.png,Source: to come,http://ontheline.trincoll.edu,New Britain incorporated from Berlin in 1850,-72.717,41.79
-9,1854,10,present,layer/layer1854.geojson,img/pending.png,Source: to come,http://ontheline.trincoll.edu,"West Hartford incorporated from Hartford, and Windsor Locks incorporated from Windsor, in 1854",-72.717,41.79
-10,1855,10,1855 map,layer/layer1854.geojson,img/pending.png,Source: to come,http://ontheline.trincoll.edu,Hartford county as it appeared in Woodford's 1855 map,-72.717,41.79
-11,1858,10,present,layer/layer1858.geojson,img/pending.png,Source: to come,http://ontheline.trincoll.edu,East Granby incorporated from Granby and Windsor Locks in 1858,-72.717,41.79
-12,1869,10,present,layer/layer1869.geojson,img/pending.png,Source: to come,http://ontheline.trincoll.edu,Plainville incorporated from Farmington in 1869,-72.717,41.79
-13,1871,10,present,layer/layer1871.geojson,img/pending.png,Source: to come,http://ontheline.trincoll.edu,Newington incorporated from Wethersfield in 1871,-72.717,41.79
-14,Today,10,present,layer/layer2016.geojson,img/pending.png,Source: to come,http://ontheline.trincoll.edu,The towns of Hartford County as they have existed from 1871 to the present,-72.717,41.79
+id,chapter,zoom,tile,layer,description,image,source-credit,source-link,lon,lat
+1,circa 1625,10,1625 map,layer/presentcounty.geojson,"Indigenous River tribes (such as the Tunxis, Poquonnuc, and Podunk) resided on land that Dutch and English settlers claimed and later converted into today's Hartford County (in blue). This map of the 1620s, created by Hayden Griswold in 1930, imagined well-defined borders among native people, similar to today's town boundaries.",img/1620sGriswoldMap.jpg,"Source: 1620s Griswold map, UConn MAGIC",https://www.flickr.com/photos/uconnlibrariesmagic/3332840235/,-72.717,41.79
+2,1633-39,10,present,layer/1639.geojson,"The first three European settlements -- Windsor (red), Hartford (blue) and Wethersfield (green) -- became known as the Constitution Towns for adopting principles of self-governance in 1639.",,,,-72.717,41.79
+3,1640,10,present,layer/1645.geojson,Farmington officially became a town in 1645.,,,,-72.717,41.79
+4,1666,10,present,layer/1666presentcounty.geojson,"When Hartford County was first established as one of Connecticut's original four counties in 1666 (red), its boundary stretched further south than today (blue).",,,,-72.717,41.79

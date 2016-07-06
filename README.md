@@ -147,7 +147,7 @@ HARTFORD gained from LITCHFIELD when town of Canton was created from towns of Ne
 
 * = display
 
-- * MAGIC:Connecticut_Griswold_1625 (circa 1625 Native Americans, drawn 1930 https://www.flickr.com/photos/uconnlibrariesmagic/3332840235/)
+- * MAGIC:Connecticut_Griswold_1625 (circa 1625 Native Americans, drawn 1930)
 - * MAGIC:1758_Kitchin - requested WMS; hard to georef (no Suffield, Enfield? https://www.flickr.com/photos/uconnlibrariesmagic/3333721828/)
 - * MAGIC:Connecticut_Park_1766 (probably inexact boundaries; southern towns appear inside Hartford County; Suffield, Enfield appear; Hartland not yet https://www.flickr.com/photos/uconnlibrariesmagic/3333722298/)
 - * MAGIC:1780_Covens (probably inexact boundaries; southern towns appear inside Hartford County; Hartland not yet https://www.flickr.com/photos/uconnlibrariesmagic/3332887013/)
@@ -181,7 +181,6 @@ The three Constitution towns:
 - Windsor settled 1633, named 1637
 - Wethersfield settled 1633, named 1637
 - Hartford founded 1633, settled 1635, named 1637
-* ADD Hartford 1640 map (drawn 1886?) https://www.flickr.com/photos/uconnlibrariesmagic/3836896031/
 Early new towns:
 - Farmington, settled 1640, incorporated and named 1645
 - Simsbury, settled and named, 1670
