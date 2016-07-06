@@ -89,7 +89,62 @@ Towns carved out of existing towns (or annexed from Massachusetts)
 
 Notes on which to use for QGIS digitization and/or display in storymap
 
-Check "history of hartford county" book for maps and list of towns (Middletown?)
+Source: AHCBP = http://publications.newberry.org/ahcbp/pages/Connecticut.html
+
+HARTFORD County chronology (1666-1806)
+
+10 May 1666
+HARTFORD created by the Colony of Connecticut as one of four original counties. (Conn. Col. Recs., 2:34-35)
+12 May 1670
+HARTFORD gained town of Simsbury from Non-County Area 2. (Conn. Col. Recs., 2:127)
+15 May 1686
+HARTFORD gained town of Waterbury from Non-County Area 2. (Conn. Col. Recs., 3:197)
+10 May 1694
+HARTFORD gained town of Windham from Non-County Area 1. (Conn. Col. Recs., 4:123-124)
+13 May 1708
+HARTFORD gained town of Hebron from Non-County Area 1. (Conn. Col. Recs., 5:64)
+14 Oct 1708
+HARTFORD gained town of Colchester from NEW LONDON. (Conn. Col. Recs., 5:80-81)
+08 May 1712
+HARTFORD gained town of Coventry from Non-County Area 1. (Conn. Col. Recs., 5:321-322)
+13 May 1714
+HARTFORD gained all of Non-County Area 1; Non-County Area 1 eliminated. (Conn. Col. Recs., 5:427)
+11 Oct 1722
+HARTFORD gained town of Litchfield from Non-County Area 2. (Conn. Col. Recs., 6:339)
+12 May 1726
+HARTFORD lost to creation of WINDHAM. (Conn. Col. Recs., 7:11-13)
+09 May 1728
+HARTFORD lost the town of Waterbury to NEW HAVEN. (Conn. Col. Recs., 7:168)
+14 May 1730
+HARTFORD gained towns of Barkhamsted, Colebrook, Hartland, Harwinton, New Hartford, Torrington, and Winchester from NEW HAVEN. (Conn. Col. Recs., 7:272, 387-390, 445-449)
+11 May 1738
+HARTFORD gained towns of Canaan, Cornwall, Goshen, Kent, and Norfolk from NEW HAVEN. (Conn. Col. Recs., 8:169-171)
+12 Oct 1749
+HARTFORD gained all of Non-County Area 7 [the towns of Enfield, Somers, and Suffield], in accordance with the May 1749 annexation from Massachusetts. (Conn. Col. Recs., 9:476)
+09 Oct 1751
+HARTFORD lost to creation of LITCHFIELD. (Conn. Col. Recs., 10:56-58)
+1774
+HARTFORD gained from HAMPSHIRE (Mass.) when Connecticut unilaterally took over a small part of the town of Southwick (Mass.) that extended south of the 1713 provincial boundary. HARTFORD included a small area of Massachusetts. (Bowen, Disputes, 65; Hooker, 25)
+09 Oct 1783
+HARTFORD lost the town of Colchester to NEW LONDON. (Conn. St. Recs., 5:220, 281, 378, 384)
+12 May 1785
+HARTFORD lost to creation of MIDDLESEX. (Conn. St. Recs., 6:10-11)
+13 Oct 1785
+HARTFORD lost to creation of TOLLAND. (Conn. St. Recs., 6:93)
+14 May 1789
+HARTFORD lost to TOLLAND when town of Bolton gained from town of East Windsor. (Conn. St. Recs., 7:62)
+02 May 1796
+HARTFORD gained town of Hartland from LITCHFIELD, lost to NEW HAVEN when town of Wolcott was created from towns of Southington and Waterbury. (Conn. St. Recs., 8:372-373)
+31 Oct 1796
+HARTFORD boundaries were redefined [no change]. (Conn. Pub. Acts 1796, pp. 123-124)
+11 Oct 1798
+HARTFORD gained from NEW HAVEN when town of Berlin gained from town of Wallingford. (Conn. St. Recs., 9:284-285)
+13 Oct 1803
+HARTFORD gained from NEW LONDON and TOLLAND when the town of Marlborough was created from the towns of Colchester, Glastonbury, and Hebron. (Conn. Spec. Acts 1803, 2:1157-1158)
+1804
+HARTFORD lost part of the town of Southwick (the "Southwick Jog") to HAMPSHIRE (Mass.) when the state boundary was adjusted. (Hooker, 25-26; Van Zandt, 69)
+08 May 1806
+HARTFORD gained from LITCHFIELD when town of Canton was created from towns of New Hartford and Simsbury. (Conn. Pub. Acts 1806, p. 721)
 
 * = display
 
@@ -120,7 +175,7 @@ Check "history of hartford county" book for maps and list of towns (Middletown?)
 - * MAGIC:Hurd_1893_12_13 (shows Newington)
 - MAGIC:USGS_1895_s24 (hard to see boundaries?)
 
-### Combined towns and maps
+### Combined notes from all sources
 
 - * MAGIC:Connecticut_Griswold_1625 (circa 1625 Native Americans, drawn 1930 https://www.flickr.com/photos/uconnlibrariesmagic/3332840235/)
 The three Constitution towns:
@@ -135,7 +190,6 @@ Towns carved out of existing towns (or annexed from Massachusetts)
 - Glastonbury, set off from Wethersfield and incorporated, 1692-93
 - Suffield, annexed from Massachusetts to Connecticut, 1749
 - Enfield, annexed from Massachusetts to Connecticut, 1749
-- Hartland, incorporated 1761
 - * MAGIC:Connecticut_Park_1766 (probably inexact boundaries; southern towns appear inside Hartford County; Suffield, Enfield appear; Hartland not yet https://www.flickr.com/photos/uconnlibrariesmagic/3333722298/)
 - East Windsor, incorporated from Windsor, 1768
 - Southington, incorporated from Farmington, 1779
@@ -143,30 +197,37 @@ Towns carved out of existing towns (or annexed from Massachusetts)
 - East Hartford, incorporated from Hartford, 1783
 - Berlin, incorporated from Farmington, Middletown, Wethersfield, 1785
 - Bristol, incorporated from Farmington, 1785
-- Granby, incorporated from Simsbury, 1786
+- Granby, incorporated from Simsbury, 1786. See also minor boundary change in East Windsor (1789, AHCBP CT, p. 33)
 - * MAGIC:Connecticut_Tanner_1796  (more precise than Doolittle_1795; no county line)
-- Marlborough, incorporated from Colchester, Glastonbury and Hebron, 1803
-- Burlington, incorporated from Bristol, 1806
-- Canton, incorporated from Simsbury, May, 1806,
+- Hartland, incorporated 1761, then added to Hartford County from Litchfield County, 1796 (AHCBP CT, p. 34). See also minor border changes in Glastonbury, Berlin, Southington, (1796-98).
+- Marlborough, town created from Glastonbury, Hebron (Tolland County), and Colchester (New London County), 1803 (AHCBP CT, p. 36)
+- Granby and Suffield lose territory to Southwick, MA, 1804 (Hooker 1933, p 25-26)
+- Burlington, town created from Bristol, 1806
+- Canton, town created from Simsbury and New Hartford (Litchfield County), May, 1806,
 - * MAGIC:1811_Warren (very exact county outline; Marlborough, Canton labeled)
-- Manchester, incorporated from East Hartford, May, 1823,
-- Avon, incorporated from Farmington, May, 1830
-- Bloomfield, incorporated from Windsor, May, 1835
-- Rocky Hill, incorporated from Wethersfield, May, 1843.
-- South Windsor, incorporated and named from East Windsor, 1845
+- Manchester, town created from East Hartford, May, 1823,
+- Avon, town created from Farmington, May, 1830
+- Bloomfield, town created from Windsor, May, 1835
+- Rocky Hill, town created from Wethersfield, May, 1843.
+- South Windsor, town created from East Windsor, 1845
 - * MAGIC:Mitchell_18501 (colorful counties but hard to see town details)
-- New Britain, incorporated from Berlin, 1850
-- West Hartford, incorporated from Hartford, 1854
-- Windsor Locks, incorporated from Windsor, 1854
+- New Britain, town created from Berlin, 1850
+- West Hartford, town created from Hartford, 1854
+- Windsor Locks, town created from Windsor, 1854
 - * MAGIC:HartfordCounty_Woodford_1855 (matches county boundaries better than Mitchell 1850; includes West Hartford, South Windsor)
-- East Granby, incorporated from Granby and Windsor Locks, 1858.
+- East Granby, town created from Granby and Windsor Locks, 1858.
 - * MAGIC:1859_Tackabury (hard to see details, but geographically precise)
-- Plainville, incorporated from Farmington, 1869.
-- Newington, incorporated from Wethersfield, 1871.
+- Plainville, town created from Farmington, 1869.
+- Newington, town created from Wethersfield, 1871.
 - * MAGIC:Hurd_1893_12_13 (shows Newington)
 
-## notes
-- Town boundaries are estimated based on the best available digitized maps, and are not based on detailed archival records. Inexact lines include the 1850s boundary divisions between West Hartford, Farmington, Avon, and Bloomfield.
+## Title and caption notes
+- Rename to: ...the towns that became Hartford County
+- Town boundaries are estimated based on the best available digitized maps, and are not based on detailed textual records. Inexact lines include:
+- 1850s divisions between West Hartford, Farmington, Avon, and Bloomfield
+- pre-1873 boundary between Wethersfield and Glastonbury (see http://www.worldcat.org/oclc/49389998)
+- on Newington, Wethersfield, Farmington, and Berlin boundaries, see Charles Burpee, "Chapter LVI: Frontier Parish Confusions," History of Hartford County, volume 2 (1928), pp. 1160-1174.
+- boundaries from 1639 to 1758 are estimated based on AHCBP for Hartford County
 
 ## START again
 - with Marlborough

@@ -42,7 +42,7 @@ function initMap() {
 
   // This customizes link to view source code; add your own GitHub repository
   map.attributionControl
-  .setPrefix('View <a href="http://github.com/jackdougherty/otl-town-borders" target="_blank">code on GitHub</a>, created with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
+  .setPrefix('View <a href="http://github.com/jackdougherty/otl-town-borders" target="_blank">code on GitHub</a> with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
 
   // Legend control layers - global variable with (null, null) allows indiv layers to be added inside functions below
   // See style.css code that intentionally hides legend control in this version
@@ -51,14 +51,14 @@ function initMap() {
     collapsed: false // false = open by default
   }).addTo(map);
 
-  // This displays the default tile layer
-  var lightAll = new L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
-  }).addTo(map);
-  controlLayers.addBaseLayer(lightAll, 'default');
-
   // tileLayer.WMS as a baselayer - see http://leafletjs.com/reference.html#tilelayer-wms
   // UConn MAGIC WMS settings - see http://geoserver.lib.uconn.edu:8080/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.demo.MapPreviewPage
+  var map1625 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
+    layers: 'MAGIC:Connecticut_Griswold_1625',
+    attribution: 'c1625 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
+  });
+  controlLayers.addBaseLayer(map1625, '1625 map');
+
   var map1758 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
     layers: 'MAGIC:Kitchin_1758',
     attribution: '1758 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
@@ -94,6 +94,20 @@ function initMap() {
     attribution: '1893 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
   });
   controlLayers.addBaseLayer(map1893, '1893 map');
+
+  // This displays the default tile layer
+  var lightAll = new L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
+  }).addTo(map);
+  controlLayers.addBaseLayer(lightAll, 'present');
+
+  //  FIX star on modern State Capitol
+  var starIcon = L.icon({
+    iconUrl: 'img/star-18.png',
+    iconRetinaUrl: 'img/star-18@2x.png',
+    iconSize: [18, 18]
+  });
+  L.marker([41.7646, -72.6823], {icon: starIcon}).addTo(map);
 
   // This loads the GeoJSON map data file from a local folder
   $.getJSON('map.geojson', function(data) {
