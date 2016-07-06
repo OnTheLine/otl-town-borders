@@ -101,7 +101,7 @@ function initMap() {
   }).addTo(map);
   controlLayers.addBaseLayer(lightAll, 'present');
 
-  //  FIX star on modern State Capitol
+  //  TO DO: Add star on modern State Capitol and prevent removal?
   var starIcon = L.icon({
     iconUrl: 'img/star-18.png',
     iconRetinaUrl: 'img/star-18@2x.png',
@@ -121,17 +121,16 @@ function initMap() {
             class: 'chapter-header'
           });
 
-          // images and source credits been commented-out from this version
-          // var image = $('<img>', {
-          //   src: feature.properties['image'],
-          // });
+          var image = $('<img>', {
+            src: feature.properties['image'],
+          });
 
-          // var source = $('<a>', {
-          //   text: feature.properties['source-credit'],
-          //   href: feature.properties['source-link'],
-          //   target: "_blank",
-          //   class: 'source'
-          // });
+          var source = $('<a>', {
+            text: feature.properties['source-credit'],
+            href: feature.properties['source-link'],
+            target: "_blank",
+            class: 'source'
+          });
 
           var description = $('<p></p>', {
             text: feature.properties['description'],
@@ -143,16 +142,14 @@ function initMap() {
             class: 'image-container'
           });
 
-          // var imgHolder = $('<div></div', {
-          //   class: 'img-holder'
-          // });
-          //
-          // imgHolder.append(image);
+          var imgHolder = $('<div></div', {
+            class: 'img-holder'
+          });
 
-          // imgHolder.append(image);
-          // container.append(chapter).append(imgHolder).append(source).append(description);
+          imgHolder.append(image);
+          
+          container.append(chapter).append(imgHolder).append(source).append(description);
 
-          container.append(chapter).append(description);
           $('#contents').append(container);
 
           var i;
