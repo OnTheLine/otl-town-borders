@@ -1,9 +1,8 @@
 # otl-town-borders
 Scroll-driven story map, with narrative text and ability to insert tile layers and GeoJSON layers
 
-## Links
+## Link
 - http://jackdougherty.github.io/otl-town-borders/index-frame.html
-- http://jackdougherty.github.io/otl-town-borders/test.html
 
 ## embed shortcode in http://OnTheLine.trincoll.edu
 ```
@@ -41,8 +40,8 @@ Scroll-driven story map, with narrative text and ability to insert tile layers a
 - Thanks @ilyankou for creative solution for using jQuery to imitate "click" in legend control layers radio button to change tile layers; option to hide legend in style.css
 
 ## To Do
-- Go back and revise map boundaries for 1835-54 West Hartford/Farmington/Bloomfield
-- Add onEachFeature styling to show town name on click or hover
+- display starIcon in script.js
+- Add onEachFeature hover feature to display town name in info window
 
 ## Towns from source
 
