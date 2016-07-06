@@ -117,13 +117,13 @@ h3 {
 }
 
 .description {
-    margin: 20px;
+    margin: 10px;
 }
 
 p.description {
     text-align: left;
-    font-size: 11pt;
-    padding: 20px;
+    font-size: 12pt;
+    padding: 5px;
 }
 
 .inFocus {
@@ -136,7 +136,7 @@ p.description {
     background-color: white;
 }
 
-/* option to hide legend control layers, since radio buttons are triggered by jQuery
+ /*option to hide legend control layers, since radio buttons are triggered by jQuery*/
 .leaflet-control-layers {
     display: none !important;
-}*/
+}
