@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<metadata>
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>Gordon DenBoer, Historical Compiler</origin>
+				<origin>Laura Rico-Beck, Digital Compiler</origin>
+				<origin>John H. Long, Editor, Atlas of Historical County Boundaries</origin>
+				<pubdate>2/12/2010</pubdate>
+				<title>Connecticut_Historical_Counties_Dataset</title>
+				<geoform>vector digital data</geoform>
+				<serinfo>
+					<sername>Atlas of Historical County Boundaries-Digital (Shapefiles)</sername>
+				</serinfo>
+				<onlink>http://www.newberry.org/ahcbp</onlink>
+			</citeinfo>
+		</citation>
+		<descript>
+			<abstract>
+This document serves as the metadata for the Connecticut Historical Counties Dataset shapefile for use in a geographic information system (GIS).  That file may be downloaded without charge from this Web site (www.newberry.org/ahcbp); see also Distribution_Information, below.  In addition, an interactive map of Connecticut's Historical Counties Dataset is available for operation and viewing through the Web site by means of ArcIMS, a program produced by Environmental Systems Research Institute (ESRI).  ArcIMS draws its boundary data for the interactive map from the Connecticut Historical Counties Dataset shapefile.  The interactive map is projected while the downloadable shapefile is not.  Here are descriptions of the sources and methods used to gather and process the information that appears in the shapefile and in the interactive map so that users can evaluate the quality and utility of the data.
+
+The comprehensive Connecticut Historical Counties Dataset shapefile holds the polygons, metadata, and attribute data for every different configuration of every county or county equivalent in Connecticut, dated to the day, from 23 April 1662 through 31 December 2000.  The Historical Counties Dataset, together with a number of supplementary cartographic data files and text files, enable users easily to employ a geographic information system for the analysis and display of county-related historical data.
+
+First among the non-cartographic data files is the Connecticut Comprehensive Database (a tab-delimited text file that can be imported into a database or spreadsheet program), which provides descriptions of all known changes in state and county boundaries, changes in county organization and attachments, and changes in status and name, together with citations to the sources.  These data include unmappable boundary changes, which usually means changes too small to plot as polygons at compilation scale, changes whose shapes could not be plotted at compilation scale (e.g., shift of a boundary line from the centerline of a road to one shoulder or the other), and changes that could not be mapped for other reasons (e.g., the location of the change could not be determined).  In the Comprehensive Database, there is a separate entry for each county involved in each event.  That facilitates assembling all the events pertaining to a single county.
+
+In addition to the Comprehensive Database, there are five supplemental texts.  These are: (1) a comprehensive County Index (includes proposed and extinct counties and non-county areas and provides cross references for name changes, with hyperlinks to corresponding individual county chronologies), (2) a Consolidated Chronology that organizes all the data by date, combining all the counties involved in an event into a single, composite entry, (3) a set of Individual County Chronologies, each one covering all the changes in a single county or equivalent, (4) a Bibliography that lists the primary and secondary sources found useful in the historical research, and (5) a Commentary on the research problems and materials that were remarkable or unusual in the process of historical compilation (Not every state requires a commentary.).  A "Read Me" file introduces all these files and indicates how to get started with them.
+</abstract>
+			<purpose>
+The Atlas is meant to be a resource for people (a) seeking records of past events, (b) trying to analyze, interpret, and display county-based historical data like returns of elections and censuses, and (c) working on state and local history.  The special interests of those potential users range from history to demography, economics, genealogy, geography, law, and politics.
+
+Counties and their equivalents (e.g., parishes in Louisiana and independent cities in four other states) cover all the territory of the United States, function as repositories of valuable records, and long have been used as the geographic base units for the gathering of essential social, political, and economic data.  The authority to create, change, or eliminate counties and to specify their functions lies with the states and their predecessors.  In detail, the role of counties varies from state to state, but in every state they administer the judicial system and provide a great number of services.  In the process, counties collect and preserve large quantities of information.  For example: records of marriages, births, and deaths; probated wills; militia training; real-estate transfers; tax collections; welfare benefits; school programs; voter registrations; etc.  Outside densely populated cities, counties have served as colonial, territorial, and state legislative districts and as the building blocks of congressional districts.  In the nineteenth century they became the grassroots centers for the development of political parties.  Moreover, counties have been the principal geographic units for the collection and aggregation of data from colonial/territorial, state, and federal censuses.
+
+Unfortunately for researchers, the average county has changed size, shape, or location between four and five times.  Therefore, knowing the present county of the place where a past event occurred may not be sufficient to find its official records.  If county boundaries changed in the meantime, it is necessary to learn what county had jurisdiction at the time of the event to identify the courthouse where the record is stored today.  If the reported population of a county changed from one census to another, was that because of an increase or a decrease in the number of people, or an annexation or loss of populated territory, or a combination of both?  Trying to analyze county-based historical data without controlling for boundary changes is almost certain to yield errors and lead to false conclusions.
+</purpose>
+			<supplinf>
+Method: Historical compilers plot county boundary changes in chronological order.  Working directly from originals or photocopies of the verbal boundary descriptions in the state session laws, the ultimate authoritative source, the researcher plots the lines on a transparent compilation sheet laid over a modern base map of the state.  As each change is plotted, the compiler writes a descriptive entry for the state's boundary chronology and a brief citation of the source of the information.  The compiler creates the Comprehensive Database from this information.
+
+Plotting boundary changes of all counties together and in sequence, not merely reconstructing the counties at different points in time (e.g., dates of censuses) or concentrating on a single county at a time (thereby taking it out of the context of what happened to its neighbors), is an important aspect of the historical compilation process.  Doing so gives the compiler valuable insight into how the counties developed and whether the intentions of legislators were realized in their enactments.  For example, a law may say its purpose is to transfer territory from County A to County B, but the actual effect, visibly evident from the plot, may be to transfer territory from both A and C to B.  When boundaries are plotted this way, gores (gaps between counties) and overlaps created accidentally by the legislature are readily apparent, and errors in plotting are discovered almost immediately.  It is nearly impossible to detect such developments unless the counties are plotted together.  Descriptive entries in the comprehensive database and in the chronologies reflect actual changes because they are written from the compilation plots, not from the laws alone or from secondary works.
+
+One additional benefit of this approach is that it provides an automatic checking mechanism.  When the historical compiler reaches the end of the development of the county network, the final version should be identical with the boundaries of the present county.  If there is a difference between the completed compilation and the standard, current map, the compiler knows there is a mistake somewhere.  Such a discrepancy is rare, but when one is discovered, the compiler reviews the compilation to find the source of the problem.  Usually it is a matter of the compiler erring in the plot of a boundary or accidentally omitting some change, either of which can easily be corrected, but occasionally the fault is found on the current, federal map.  When the error appears on the federal map, the boundary is plotted accurately and a brief explanation of the difference is added to the supplemental Commentary.
+
+Problematic Data.  Every so often, a state's law makers mistakenly overlapped the lines of two or more counties.  Once such an overlap was detected, it seldom lasted long because dual jurisdictions generate only trouble, and states acted swiftly to eliminate them.  This atlas treats areas of overlapping jurisdiction as distinct polygons and provides the usual data (e.g., start dates and end dates) for each one.
+
+Much more common than overlaps are non-county areas, that is, areas not within the jurisdiction of any county.  Sometimes legal boundary descriptions left small areas, known as gores, outside the bounds of any county.  Such inadvertent omissions errors most often occurred in the early days of a state's history when boundary makers lacked knowledge of the state's topography.  Sometimes, legislators purposely did not extend county jurisdiction over all of their state's territory as early as possible, but waited until they had a better understanding of the lay of the land and until the prospect of European settlement was closer.  Under those circumstances, they often provided a minimum of legal and administrative services for each non-county area by formally attaching it to a fully operational county; later, when the area was ready for settlement or was already under development, the state created one or more counties from the non-county area.
+
+This atlas aims to be absolutely comprehensive and, with a few exceptions (see next paragraph), to leave no "holes" in its historical and geographic coverage of a state.  In practice, each state compilation includes all the territory within its bounds in 2000, regardless of what authority created or altered a county there, plus all other territory that may have been within the state's jurisdiction at an earlier time.  Also, there are no empty spaces, no areas outside a named polygon.  Each non-county area, whether an accidental gore or a region purposely set aside for future settlement, is represented by a polygon, the polygon is named (often merely as a non-county area with a number, such as NCA1), and a full set of data about it is entered in the database and the attribute file.
+
+The exceptions to the "no-holes" policy described above are the large non-county areas in western Virginia, New York, and the New England states during much of the seventeenth century.  In London and the other European capitals, officials had access to so little accurate information about inland territory that imperial claims and land grants, including colonial charters, often were incomplete or imprecise or asserted limits (e.g., the Pacific Ocean or "South Sea") that were so extreme as to be impractical to plot.  Compilers treated those large, indefinitely bounded, and inadequately described, non-county areas as empty territory and made no attempt to represent them as coherent, historically complete polygons.  Because the ArcGIS program requires that all polygons be closed, the compilers supplied estimated boundary lines to close polygons representing indefinitely extensive frontier counties and noted their action in the "Change" field.
+
+Some changes have not been mapped because the change is too small to map, or the location is unknown, or both; for example, a law that transferred ten acres belonging to farmer Smith from one county to another would be unmappable because the parcel is too small to be mapped at the standard compilation scale or because the location of Smith's farm cannot be discovered.  When the location of a change too small to map is known, the historical compiler marks the location and the digital compiler digitizes it as a point.  All such tiny changes are collected in a separate shapefile, usually labeled [YEAR]_pt.shp.
+
+Using the historical compiler's plotting overlays and associated material (e.g., notes, copies of the laws), the GIS compiler draws the counties in digital form.  For digitizing, the program is ArcGIS 9.1, and the electronic modern "base map" is from the Digital Chart of the World (DCW) provided with ArcGIS by Environmental Systems Research Institute (ESRI), plus, as needed, such other data (often from another source) as the grid of the Public Land Survey System (PLSS).  By repeating much of the procedure of the historical compiler, the digital compiler implicitly checks the work of her predecessor and occasionally finds line segments that must be corrected.  As digitizing proceeds, data from the comprehensive database are entered into the attribute table.
+
+After perfecting the boundary lines, the GIS digitizer assembles copies of all county polygons and attribute data into a single shapefile, the Historical Counties Dataset shapefile.
+</supplinf>
+		</descript>
+		<timeperd>
+			<timeinfo>
+				<rngdates>
+					<begdate>04/23/1662</begdate>
+					<enddate>12/31/2000</enddate>
+				</rngdates>
+			</timeinfo>
+			<current>publication date</current>
+		</timeperd>
+		<status>
+			<progress>Complete</progress>
+			<update>As needed</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc>-82.859774</westbc>
+				<eastbc>-70.781707</eastbc>
+				<northbc>42.745940</northbc>
+				<southbc>40.934209</southbc>
+			</bounding>
+		</spdom>
+		<keywords>
+			<theme>
+				<themekt>none</themekt>
+				<themekey>historical county boundaries</themekey>
+			</theme>
+			<place>
+				<placekt>none</placekt>
+				<placekey>Connecticut</placekey>
+			</place>
+			<temporal>
+				<tempkt>none</tempkt>
+				<tempkey>23 April 1662 to 31 December 2000</tempkey>
+			</temporal>
+		</keywords>
+		<accconst>Free access for use under an Attribution-NonCommercial-ShareAlike Creative Commons License</accconst>
+		<useconst>Free for use under an Attribution-NonCommercial-ShareAlike Creative Commons License</useconst>
+		<ptcontac>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Dr. William M. Scholl Center for American History and Culture, The Newberry Library</cntorg>
+				</cntorgp>
+				<cntpos>Director, Dr. William M. Scholl Center for American History and Culture</cntpos>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>60 W. Walton Street</address>
+					<city>Chicago</city>
+					<state>Illinois</state>
+					<postal>60610</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntemail>scholl@newberry.org</cntemail>
+				<hours>8:00 am - 5:00 pm M-F, CT</hours>
+			</cntinfo>
+		</ptcontac>
+		<datacred>Principal financial support for the project was provided by the Reference Materials Program of the National Endowment for the Humanities, an independent federal agency; additional support came from the Newberry Library, Chicago, the project's headquarters, and from a number of corporations, foundations, and individuals.</datacred>
+		<secinfo>
+			<secsys>none</secsys>
+			<secclass>Unclassified</secclass>
+			<sechandl>none</sechandl>
+		</secinfo>
+		<native>Microsoft Windows 2000 Version 5.0 (Build 2195) Service Pack 4; ESRI ArcCatalog 9.1.0.780</native>
+		<crossref>
+			<citeinfo>
+				<origin>John H. Long, Editor, Historical Compiler</origin>
+				<origin>Peggy Tuck Sinko, Assoc. Editor, Historical Compiler</origin>
+				<origin>Douglas Knox, Book Digitizing Director, GIS Compiler</origin>
+				<origin>Gordon DenBoer, Historical Compiler</origin>
+				<origin>Kathryn Ford Thorne, Historical Compiler</origin>
+				<origin>George E. Goodridge, Jr., Historical Compiler</origin>
+				<origin>Emily Kelley, Historical Compiler, GIS Compiler</origin>
+				<origin>Laura Rico-Beck, GIS Specialist, GIS Compiler</origin>
+				<origin>Peter Siczewicz, GIS Consultant</origin>
+				<origin>Robert Will, Cartographic Assistant</origin>
+				<origin>John Ford, Cartographic Assistant</origin>
+				<pubdate>various</pubdate>
+				<title>Atlas of Historical County Boundaries</title>
+				<geoform>book and vector digital data</geoform>
+				<pubinfo>
+					<pubplace>New York</pubplace>
+					<publish>Simon and Schuster</publish>
+					<publish>Charles Scribner's Sons</publish>
+				</pubinfo>
+				<othercit>19 book vols. (1993-2000), online publication (2000-present)</othercit>
+			</citeinfo>
+		</crossref>
+	</idinfo>
+	<dataqual>
+		<attracc>
+			<attraccr>
+The Atlas of Historical County Boundaries Project aims to achieve high accuracy through the use of the most authoritative and reliable sources, analysis of those sources by tested procedures, and careful proofreading of the results.  Because counties are created and changed by their states, the state session laws are the primary, authoritative sources for the county lines, names, organization, and attachments.  The initial plots of the boundaries are direct conversions of the legal boundary descriptions in the laws into linework on the plotting sheets.  They are performed with copies of the legal descriptions at hand, and those same laws also are at hand for the GIS compiler when digitizing boundaries.  All other sources, including old maps, are derived from those legal descriptions.  The historical compiler searches the state session laws and, when necessary, related material (e.g., court decisions, executive proclamations) for information about the courses of the boundaries.  Secondary texts, maps, and local experts are consulted as needed (e.g., when recovering a long-lost landmark that figured in an early boundary description).  Dates of changes are also taken from the laws.  Some laws specify when the change will go into effect, but others (mostly those passed before the twentieth century) do not; if no official effective date is provided, the historical compiler uses the date when the law was passed or approved.
+
+The locations of places and landmarks cited in the boundary descriptions are gathered from the modern, federal base maps or from secondary publications (e.g., gazetteers, county histories, articles in historical journals), old maps, or local experts.
+
+Several steps are taken to insure the accuracy of the boundaries as they are manually plotted, and to maintain the precision of those plots as they are manually digitized.  The digitizing process involves faithfully drawing the sketched counties using landmarks such as rivers, roads, and places.  These positional data were obtained from ESRI's Data and Maps collection (1:100,000 scale).  Additionally, "Connecticut Towns-Master Archive Data Layer," a collection of polygons representing Connecticut's modern town boundaries (1:24,000 scale) were used to digitize boundaries in Connecticut. These data were acquired from the Environmental and Geographic Information Center, Department of Environmental Protection, State of Connecticut. Once the initial digitizing is complete a master file is created and uploaded on IMS.  When the digitizing is complete, the digitized polygons and their attribute data are once again checked for accuracy against the chronology for the state.
+</attraccr>
+		</attracc>
+		<complete>
+The data set is complete.  All changes are dated to the day.  If there is a difference between the effective date of change and the date when a law was passed, the effective date of change is used.  Boundary changes too small to map are included in the chronologies and in the Comprehensive Database.  As a rule, boundary changes occurring entirely on water were not mapped.  Exceptions to this rule might include county boundaries which run through large inland water bodies like Lake Okeechobee, Lake Pontchartrain, Great Salt Lake, etc.
+
+No regular or systematic updating of the pre-2001 data is anticipated because (a) the historical data cannot change and (b) the compilers believe their methods and materials are sufficient to produce data that are complete and correct.  (That is not to say no error can slip through. Suggestions for ad hoc changes or additions to the historical data, together with an explanation of why the change should be made and supporting evidence, should be directed to scholl@newberry.org or Dr. William M. Scholl Center for American History and Culture, The Newberry Library, 60 W. Walton St., Chicago, IL 60610.)  County boundary changes that occur after 31 December 2000 will routinely be digitized by both the state of Connecticut and the federal government and, therefore, will be available from agencies of those governments in separate files in the indefinite future.
+</complete>
+		<posacc>
+			<horizpa>
+				<horizpar>Accurate to matching USGS 1:500,000 scale State Base maps.</horizpar>
+			</horizpa>
+		</posacc>
+		<lineage>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>Connecticut legislature</origin>
+						<pubdate>1850-1890</pubdate>
+						<title>Public Records of the Colony of Connecticut</title>
+						<geoform>book</geoform>
+						<pubinfo>
+							<pubplace>Hartford</pubplace>
+							<publish>Government of Connecticut</publish>
+						</pubinfo>
+					</citeinfo>
+				</srccite>
+				<typesrc>paper</typesrc>
+				<srctime>
+					<timeinfo>
+						<rngdates>
+							<begdate>05/1665</begdate>
+							<enddate>10/1776</enddate>
+						</rngdates>
+					</timeinfo>
+					<srccurr>publication date</srccurr>
+				</srctime>
+				<srccitea>Conn. Col. Recs.</srccitea>
+				<srccontr>These laws are the authority for the creation and change of each county; they contain the legal, verbal descriptions of the county boundaries, the effective dates of change, and related material.  The historical compilers plot the lines described in the laws, converting them from words to lines on a map.</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>Connecticut legislature</origin>
+						<pubdate>1894-1997</pubdate>
+						<title>Public Records of the State of Connecticut</title>
+						<geoform>book</geoform>
+						<pubinfo>
+							<pubplace>Hartford</pubplace>
+							<publish>Government of Connecticut</publish>
+						</pubinfo>
+					</citeinfo>
+				</srccite>
+				<srcscale></srcscale>
+				<typesrc>paper</typesrc>
+				<srctime>
+					<timeinfo>
+						<rngdates>
+							<begdate>10/1776</begdate>
+							<enddate>10/1813</enddate>
+						</rngdates>
+					</timeinfo>
+					<srccurr>publication date</srccurr>
+				</srctime>
+				<srccitea>Conn. St. Recs.</srccitea>
+				<srccontr>These laws are the authority for the creation and change of each county; they contain the legal, verbal descriptions of the county boundaries, the effective dates of change, and related material.  The historical compilers plot the lines described in the laws, converting them from words to lines on a map.</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>Connecticut legislature</origin>
+						<pubdate>1776-1971</pubdate>
+						<title>Public Acts of the State of Connecticut</title>
+						<geoform>document</geoform>
+						<pubinfo>
+							<pubplace>Hartford</pubplace>
+							<publish>Government of Connecticut</publish>
+						</pubinfo>
+					</citeinfo>
+				</srccite>
+				<srcscale></srcscale>
+				<typesrc>paper</typesrc>
+				<srctime>
+					<timeinfo>
+						<rngdates>
+							<begdate>10/1776</begdate>
+							<enddate>12/31/1971</enddate>
+						</rngdates>
+					</timeinfo>
+					<srccurr>publication date</srccurr>
+				</srctime>
+				<srccitea>Conn. Pub. Acts</srccitea>
+				<srccontr>These laws are the authority for the creation and change of each county; they contain the legal, verbal descriptions of the county boundaries, the effective dates of change, and related material.  The historical compilers plot the lines described in the laws, converting them from words to lines on a map.</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>Environmental Systems Research Institute, Inc. (ESRI)</origin>
+						<pubdate>11/01/2000</pubdate>
+						<title>ESRI Data Maps</title>
+						<edition>2000</edition>
+						<geoform>vector digital data</geoform>
+						<pubinfo>
+							<pubplace>Redlands, California, USA</pubplace>
+							<publish>Environmental Systems Research Institute, Inc. (ESRI)</publish>
+						</pubinfo>
+					</citeinfo>
+				</srccite>
+				<srcscale>100,000</srcscale>
+				<typesrc>CD-ROM</typesrc>
+				<srctime>
+					<timeinfo>
+						<sngdate>
+							<caldate>2000</caldate>
+						</sngdate>
+					</timeinfo>
+					<srccurr>publication date</srccurr>
+				</srctime>
+				<srccitea>BASE1</srccitea>
+				<srccontr>For Connecticut the ESRI detailed county, rivers, glocale, gsummit, highway, mjwater, and rail100K data were used as a modern base map, a reference for drawing historical county boundaries.</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>State of Connecticut: Environmental and Geographic Information Center, Dept. of Environmental Protection</origin>
+						<pubdate>1994</pubdate>
+						<title>Connecticut Towns-Master Archive Data Layer</title>
+						<edition>1994</edition>
+						<geoform>vector digital data</geoform>
+						<serinfo>
+							<sername></sername>
+							<issue></issue>
+						</serinfo>
+						<pubinfo>
+							<pubplace>Hartford, Connecticut USA</pubplace>
+							<publish>Natural Resources Center, DEP, State of Connecticut</publish>
+						</pubinfo>
+						<onlink>http://magic.lib.uconn.edu/</onlink>
+					</citeinfo>
+				</srccite>
+				<srcscale>1:24,000</srcscale>
+				<typesrc>online</typesrc>
+				<srccitea>towns</srccitea>
+				<srccontr>
+Connecticut Towns-Master Archive Data Layer is a collection of polygons representing Connecticut's modern political boundaries. Towns in Connecticut, as in most of New England, are often the basic building blocks of counties, and many county boundary changes are due to changes in town boundaries. Using this modern town network as a base layer was useful in reconstructing historical town boundaries and, consequently, historical county boundaries.
+</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>various</origin>
+						<pubdate>various</pubdate>
+						<pubtime>various</pubtime>
+						<title>Connecticut Historical County Boundaries - Bibliography</title>
+						<edition>various</edition>
+						<pubinfo>
+							<pubplace>various</pubplace>
+							<publish>various</publish>
+						</pubinfo>
+					</citeinfo>
+				</srccite>
+				<srcscale></srcscale>
+				<typesrc>paper, internet</typesrc>
+				<srccitea>CT_BIB</srccitea>
+				<srccontr>"Connecticut: Bibliography and Sources," a partially annotated bibliography of textual and cartographic sources that yielded useful information in the compilation of the historical evolution of Connecticut's counties, is a separate document that is a companion to this shapefile.  Items in the bibliography are not equally important, yet each one was sufficiently valuable to the research and compilation of Connecticut's historical county boundaries to merit listing.  With the exception of the detailed citations above, no other sources are cited and described separately in the metadata and in the style set by the FGDC metadata standard; traditional bibliographic style is more compact and provides sufficient information for a user to find the item in any library.</srccontr>
+			</srcinfo>
+			<procstep>
+				<procdesc>
+Historical Compilation.  Working directly from originals or photocopies of the verbal boundary descriptions in the laws, the historical compiler plots the boundary lines of Historical Counties Dataset on a transparent compilation sheet laid over a base map of the state.  Compilation proceeds from past to present.  As each change is plotted the compiler writes a descriptive entry for the state's boundary chronology and a brief citation of the source of the information and enters it into the Comprehensive Database.  (See also Supplemental_Information, Method, above.)
+
+The base map for this operation was the Connecticut map from the U.S.G.S. State Base series at the scale of 1:500,000.  (The 1:1,000,000 version of the map was employed whenever smaller scale was appropriate or needed to plot large or simple changes.)  The original strategy for the Atlas was to publish all states in book form before venturing to digitize the data, and the 1:500,000 scale maps were used in making the books.  Before switching to all digital products and methods, about 80% of the states had been researched and compiled using this series of base maps, including 24 states published in 19 printed volumes.  It was not practical to re-compile those data at a larger scale like 1:100,000.  (See below, the next two process steps.)
+</procdesc>
+				<srcused>Conn. Col. Recs</srcused>
+				<srcused>Conn. St. Recs</srcused>
+				<srcused>Conn. Pub. Acts</srcused>
+				<srcused>CT_BIB</srcused>
+				<procdate>1994</procdate>
+				<srcprod>CTB1</srcprod>
+			</procstep>
+			<procstep>
+				<procdesc>Digital Base Map Creation.  The GIS compiler creates a digital base map for the state (and any neighboring states that take part in its history) by editing the relevant portion of the Digital Chart of the World (DCW) supplied by ESRI in its ArcView package.  This process consists chiefly in deleting elements (e.g., rivers) that are not related to the boundaries or do not serve a major reference function for potential readers and adding such other data as necessary.  State Web sites commonly are the best sources for the grid of the Public Land Survey System (PLSS) in states west of the Appalachian Mountains and for the networks of town boundaries in the New England states.  The main component of the customized base map is the set of detailed polygons of the modern counties.  The GIS compiler projects the DCW so that the working version matches the projection of the paper base map used by the historical compiler.</procdesc>
+				<srcused>BASE1</srcused>
+				<procdate>2008</procdate>
+				<srcprod>BASE2</srcprod>
+			</procstep>
+			<procstep>
+				<procdesc>
+Digitizing Historical Counties.  Using the historical compiler's base map, plotting overlays, the Comprehensive Database, and associated material (e.g., notes, copies of the laws), the GIS compiler manually digitizes the historical county polygons over the digital base map.  By repeating much of the process of the historical compiler, the digital compiler implicitly checks the work of the historical compiler and occasionally finds line segments that are in error and must be corrected.
+
+As digitizing proceeds, data from the Comprehensive Database are entered into the attribute table.  The process of entering attribute data entails an implicit review of the database and, if the greater map detail involved in working at digitization scale (see below) is different from the original descriptions, that may lead to updates of the database, including dates and version numbers and even descriptions of changes.
+
+The compiler works "heads up," facing the monitor and using the mouse to draw lines against a background of the digital base map.  The historical compiler's plots are not scanned and overlaid on the digital base map, nor does the digital compiler trace the earlier work on a digitizing tablet, because neither technique is as efficient or accurate as drawing the lines anew.  One reason is that the scale for most of the historical compilations is 1:500,000 and the scale for digitization is 1:100,000.  It is most unusual to draw a map at a larger scale than its source or early version, but in this case it was unavoidable because digitization did not commence until after nearly all the states had already been compiled at the smaller scale.  In effect, the historical plots are a preliminary stage, and the plots from that work become the chief sources or guides (supported by the historical notes and copies of the legal descriptions, and other material) for the digital compiler who renders the final, detailed version of the boundary lines.
+</procdesc>
+				<srcused>CTB1, BASE2</srcused>
+				<procdate>2008</procdate>
+				<srcprod>CTB2</srcprod>
+			</procstep>
+			<procstep>
+				<procdesc>Create the comprehensive Historical Counties Dataset shapefile.  After digitizing the historical counties, the GIS compiler creates a shapefile known as the comprehensive Historical Counties Dataset shapefile.  It holds all versions of each county, plus unsuccessful proposals for changes and new counties, thus enabling a user to acquire maps of every version of every county.  After the historical and IMS master files have been created, areas are calculated for all polygons.</procdesc>
+				<srcused>CTB2</srcused>
+				<procdate>2008</procdate>
+				<srcprod>CTB3</srcprod>
+			</procstep>
+			<procstep>
+				<procdesc>Final Proofing.  Compilers proof the polygons of the master shapefile against the comprehensive database.  After using ArcIMS to prepare an interactive, viewable cartographic shapefile, the compiler compares the entries in the database to the entries in the attribute table and checks the IMS image for the date and county names specified in the database entry.  Discrepancies in the textual material (i.e., database) can be corrected on the spot; apparent errors in the polygons are noted for later correction by the GIS compiler.  Later, after the GIS compiler corrects any faults in the line work, those corrections are reviewed again by the compilers and, if all polygons and text match properly, the shapefile is posted to the Web site.</procdesc>
+				<srcused>CTB3</srcused>
+				<procdate>2009</procdate>
+				<srcprod>CTB4</srcprod>
+			</procstep>
+			<procstep>
+				<procdesc>
+Topology Check.  A multi-step process was applied to ensure that historical county polygons fit together precisely at all dates.  The first step was to convert the historical county shapefile to a polygon feature class in an ESRI geodatabase.  ArcMap tools were then used to planarize the polygon boundary lines in the historical county feature class, and to create polygons from these lines.  This resulted in a new feature class consisting of non-overlapping component polygons. The ESRI topology functionality was applied to the component polygons to detect overlaps and gaps, and to snap vertices to the ESRI modern county polygon feature class.
+
+Based on the original historical county data, a table was created to specify, for each component polygon, the different counties to which it belonged and the time frames.  The table was programmatically checked to verify that each component polygon was correctly assigned to historical counties throughout its life, with no unexpected gaps or overlaps.
+
+The component polygons were then reassembled back into the historical counties, and converted to a shapefile. The resulting historical county shapefile consists of a large number of overlapping polygons; however, as a result of the topology check process, the subset of counties in effect at any selected date is topologically correct, with no unexpected gaps or overlaps.  There are a number of known gaps and overlaps, however, due to legislative or surveying errors, and to conflicting territorial claims.
+</procdesc>
+				<srcused>CTB4</srcused>
+				<procdate>2008-2009</procdate>
+				<srcprod>CTB5</srcprod>
+			</procstep>
+		</lineage>
+	</dataqual>
+	<spdoinfo>
+		<direct>Vector</direct>
+		<ptvctinf>
+			<sdtsterm>
+				<sdtstype>G-polygon</sdtstype>
+				<ptvctcnt>140</ptvctcnt>
+			</sdtsterm>
+		</ptvctinf>
+	</spdoinfo>
+	<spref>
+		<horizsys>
+			<geograph>
+				<latres>0.000000</latres>
+				<longres>0.000000</longres>
+				<geogunit>Decimal degrees</geogunit>
+			</geograph>
+			<geodetic>
+				<horizdn>North American Datum of 1983</horizdn>
+				<ellips>Geodetic Reference System 80</ellips>
+				<semiaxis>6378137.000000</semiaxis>
+				<denflat>298.257222</denflat>
+			</geodetic>
+		</horizsys>
+	</spref>
+	<eainfo>
+		<detailed>
+			<enttyp>
+				<enttypl>county</enttypl>
+				<enttypd>county and county equivalents</enttypd>
+				<enttypds>Conn. Pub. Acts</enttypds>
+			</enttyp>
+			<attr>
+				<attrlabl>FID</attrlabl>
+				<attrdef>Internal feature number.  The FID number is the unique identifier (a primary key in database terms) for each polygon within a shapefile; its application is limited to its single shapefile.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>Sequential unique whole numbers that are automatically generated.</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>Shape</attrlabl>
+				<attrdef>Feature geometry.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>Coordinates defining the features.</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>NAME</attrlabl>
+				<attrdef>name or other identification of county or equivalent, limited to 20 characters</attrdef>
+				<attrdefs>colonial, territorial, state, and federal laws</attrdefs>
+				<attrdomv>
+					<udom>character field</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>ID</attrlabl>
+				<attrdef>
+Whereas the FID numbers (see above) uniquely identify the different polygons in a single state's shapefile, the ID code identifies unique geographical institutions, i.e., states, counties, and other administrative entities.  The ID code is stable across datasets (state shapefiles); it does not change when there is a change in the county's name, shape, size, location, or parent state or equivalent.  Each county's unique identifier is set in terms of its current or most recent state affiliation.  Hence, "MES_York" is the identifier for modern York County, Maine, and all its earlier versions, even though it was created as part of colonial Massachusetts and is represented by polygons in the shapefiles of both Massachusetts and Maine.
+
+Because the FIPS system (see below) provides no codes for some extinct counties, no codes for non-county areas, and no codes for the colonies and territories that were predecessors of the states, it has been necessary to create a more comprehensive, alternative system of identifiers.  The system adopted by the Atlas identifies each state and colony or territory with three letters, the first two based on the system of two-letter codes employed by the U.S. Post Office and the third indicating the status of the organization.  (In most cases that is simply a C for colony, a T for territory, or an S for state.)  For example, IAT stands for Iowa Territory and IAS for the state of Iowa.  Some precursors of states need special ID codes, most of which are intuitively easy to read and to apply, especially in the context of a particular state's dataset.  Examples are NWT (Northwest Territory, formally named Territory Northwest of the River Ohio), SWF (Spanish West Florida), FRS (State of Franklin), DKT (Dakota Territory), CRC (Colony of Carolina), and TXR (Republic of Texas).
+
+Counties are identified by appending their names to the state codes, as in "KYS_Adair" for Adair County in the state of Kentucky.  Non-county areas are abbreviated NCA; within a specific state they are differentiated from each other by adding a numeral to the abbreviation, as in "MOS_NCA1" for non-county area number 1 in the state of Missouri.  Occasionally special codes are needed to deal with unusual historical situations, as in Vermont where the original Washington County, identified as "VTS_Washington01," became extinct and later the name was applied to another county ("VTS_Washington") that continues today.  The county identifiers also have been created with an eye towards users who may wish to download and work with more than one state file for regions and want a comprehensive way to sort and select shapefiles or to link the attribute table to the comprehensive database.
+</attrdef>
+				<attrdefs>project standards</attrdefs>
+				<attrdomv>
+					<udom>character field</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>STATE</attrlabl>
+				<attrdef>name of the county's current or most recent state affiliation</attrdef>
+				<attrdefs>colonial, territorial, state, and federal laws</attrdefs>
+				<attrdomv>
+					<udom>character field</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>FIPS</attrlabl>
+				<attrdef>FIPS codes are provided for the convenience of researchers working with data that has already been labeled with numbers from that coding system.  FIPS is the abbreviation of Federal Information Processing Standard.  FIPS codes were created in the first half of the twentieth century and are meant to facilitate efficiency and clarity in data handling.  The system provides a two-digit code for each state or equivalent and a three-digit code for each county or equivalent.  (Sometimes those codes are combined into five-digit numbers that start with the two digits for the state, as in this attribute table).  The FIPS codes for states and counties in existence at the end of 2000 were taken from the federal government's FIPS PUB 6-4 (created 1996, last modified 10 May 2002), and the codes for extinct counties were taken from earlier lists.  Some counties or other administrative entities may have no FIPS codes.  In some cases they represent historical counties that became extinct before the introduction of FIPS codes; in other cases they represent temporary non-county areas.  In the attribute table the FIPS field for those areas and extinct counties has been left blank because there is no standard system for pre-FIPS colonies, territories, and counties and no coding system includes non-county areas.  Of course, users may supply a FIPS substitute of their own creation or, for extinct early counties, adopt an existing, alternative coding scheme, such as the one employed by Richard L. Forstall in his compilation, "Population of States and Counties of the United States: 1790-1990" (U.S. Bureau of the Census, 1996).  In addition, as described above under Attribute Label: ID, the Atlas developed a parallel system of non-FIPS Identifiers to encode all states, counties, and equivalents; it is more flexible and working with it is easier than using the FIPS codes.</attrdef>
+				<attrdefs>FIPS PUB 6-4</attrdefs>
+				<attrdomv>
+					<codesetd>
+						<codesetn>Federal Information Processing Standards</codesetn>
+						<codesets>FIPS PUB 6-4</codesets>
+					</codesetd>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>VERSION</attrlabl>
+				<attrdef>sequential and chronological change in county name or configuration</attrdef>
+				<attrdefs>compiler</attrdefs>
+				<attrdomv>
+					<udom>character field</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>START_DATE</attrlabl>
+				<attrdef>first date for a particular county version or event, arranged as mm/dd/yyyy</attrdef>
+				<attrdefs>colonial, territorial, state, and federal laws</attrdefs>
+				<attrdomv>
+					<rdom>
+						<rdommin>16620423</rdommin>
+						<rdommax>20001231</rdommax>
+					</rdom>
+				</attrdomv>
+				<begdatea>04/23/1662</begdatea>
+				<enddatea>18850407</enddatea>
+			</attr>
+			<attr>
+				<attrlabl>END_DATE</attrlabl>
+				<attrdef>last date for a particular county version or event, arranged as mm/dd/yyyy</attrdef>
+				<attrdefs>colonial, territorial, state, and federal laws</attrdefs>
+				<attrdomv>
+					<rdom>
+						<rdommin>16650407</rdommin>
+						<rdommax>20001231</rdommax>
+					</rdom>
+				</attrdomv>
+				<begdatea>04/07/1665</begdatea>
+				<enddatea>12/31/2000</enddatea>
+			</attr>
+			<attr>
+				<attrlabl>CHANGE</attrlabl>
+				<attrdef>creation, change, or other event for each county on the given date</attrdef>
+				<attrdefs>colonial, territorial, state, and federal laws, compiler</attrdefs>
+				<attrdomv>
+					<udom>character field</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>CITATION</attrlabl>
+				<attrdef>reference to the source of data for the event described under CHANGE</attrdef>
+				<attrdefs>colonial, territorial, state, and federal laws, any other texts, maps, or interviews employed to gather data</attrdefs>
+				<attrdomv>
+					<udom>character field</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>START_N</attrlabl>
+				<attrdef>first date for a particular county version or event, arranged in the standard date format yyyymmdd</attrdef>
+				<attrdefs>colonial, territorial, state, and federal laws</attrdefs>
+				<attrdomv>
+					<rdom>
+						<rdommin>16620423</rdommin>
+						<rdommax>18850407</rdommax>
+					</rdom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>END_N</attrlabl>
+				<attrdef>last date for a particular county version or event, arranged in the standard date format yyyymmdd</attrdef>
+				<attrdefs>colonial, territorial, state, and federal laws</attrdefs>
+				<attrdomv>
+					<rdom>
+						<rdommin>16650407</rdommin>
+						<rdommax>20001231</rdommax>
+					</rdom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>AREA_SQMI</attrlabl>
+				<attrdef>area of a county or equivalent in square miles, calculated from polygon by means of ArcMap facility</attrdef>
+				<attrdefs>compiler</attrdefs>
+				<attrdomv>
+					<udom>numeric field</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>DATASET</attrlabl>
+				<attrdef>
+The dataset field identifies the topical focus of the master shapefile. For every state the subject matter consists of all events affecting state and county jurisdiction within the borders of the modern state, regardless of the enabling authority, plus similar events involving the state outside its modern bounds, regardless of where or when.  For example, polygons for Virginia's earliest western counties appear in the dataset for Kentucky because they represent part of the history of the area that became Kentucky; they also are included in the Virginia dataset because they are integral to the early history of Virginia, even though Virginia long ago ceded its authority over the area.  In general, therefore, the dataset encompasses more data than a state, concentrating on one state (the principal point of focus) but possibly embracing data from one or more related, secondary states.
+
+Historically, almost every colony and territory transformed smoothly into statehood with no complications that might have required separate datasets for the state and its predecessors.  The exception is Dakota Territory, which has its own dataset, and which split into a pair of states.
+</attrdef>
+				<attrdefs>Project standards</attrdefs>
+				<attrdomv>
+					<udom>character field</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>CNTY_TYPE</attrlabl>
+				<attrdef>This field classifies each county and equivalent into one of several categories: (1) District; judicial districts, a county equivalent which at one time served as a basic unit of government in South Carolina, (2) Parish; a county equivalent which at one time served as a basic unit of government in South Carolina, and which is currently the primary unit of government in Louisiana, (3) Jefferson_Territory; an extralegal territory, never recognized by the United States, that included all of present Colorado and parts of present Nebraska, Wyoming, and Utah, (4) Proposal; proposed counties which never became operational, (5) County; all remaining counties and county equivalents included in this dataset.</attrdef>
+				<attrdefs>Project standards</attrdefs>
+				<attrdomv>
+					<udom>
+character field
+</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>FULL_NAME</attrlabl>
+				<attrdef>name or other identification of county or equivalent</attrdef>
+				<attrdefs>colonial, territorial, state, and federal laws</attrdefs>
+				<attrdomv>
+					<udom>character field</udom>
+				</attrdomv>
+			</attr>
+		</detailed>
+	</eainfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Dr. William M. Scholl Center for American History and Culture, The Newberry Library</cntorg>
+				</cntorgp>
+				<cntpos>Director, Dr. William M. Scholl Center for American History and Culture</cntpos>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>60 W. Walton Street</address>
+					<city>Chicago</city>
+					<state>Illinois</state>
+					<postal>60610</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntemail>scholl@newberry.org</cntemail>
+				<hours>8:00 am - 5:00 pm, M-F, CT</hours>
+			</cntinfo>
+		</distrib>
+		<resdesc>Connecticut Historical Counties Dataset shapefile</resdesc>
+		<distliab>No liability is assumed by the Atlas of Historical County Boundaries Project or the Newberry Library</distliab>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<formname>SHP</formname>
+					<filedec>Zipped file.</filedec>
+					<transize>3.046</transize>
+				</digtinfo>
+				<digtopt>
+					<onlinopt>
+						<computer>
+							<networka>
+								<networkr>&lt;http://www.newberry.org/ahcbp&gt;</networkr>
+							</networka>
+						</computer>
+					</onlinopt>
+				</digtopt>
+			</digform>
+		</stdorder>
+		<techpreq>To use this data requires software that supports ESRI GIS shapefiles.</techpreq>
+		<availabl>
+			<timeinfo>
+				<sngdate>
+					<caldate>Fall 2009 and thereafter</caldate>
+				</sngdate>
+			</timeinfo>
+		</availabl>
+	</distinfo>
+	<metainfo>
+		<metd>2/12/2010</metd>
+		<metc>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Dr. William M. Scholl Center for American History and Culture, The Newberry Library</cntorg>
+				</cntorgp>
+				<cntpos>Director, Dr. William M. Scholl Center for American History and Culture</cntpos>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>60 W. Walton Street</address>
+					<city>Chicago</city>
+					<state>Illinois</state>
+					<postal>60610</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntemail>scholl@newberry.org</cntemail>
+				<hours>8:00 am - 5:00 pm, M-F, CT</hours>
+			</cntinfo>
+		</metc>
+		<metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+		<metstdv>FGDC-STD-001-1998</metstdv>
+		<mettc>local time</mettc>
+		<metextns></metextns>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+	</metainfo>
+	<Esri><MetaID>{325F99E4-A942-4989-8280-B22DC5843309}</MetaID><CreaDate>20091008</CreaDate><CreaTime>13465700</CreaTime><SyncOnce>TRUE</SyncOnce><ModDate>20100208</ModDate><ModTime>12453000</ModTime></Esri></metadata>
