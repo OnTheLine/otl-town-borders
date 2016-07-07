@@ -176,7 +176,7 @@ HARTFORD gained from LITCHFIELD when town of Canton was created from towns of Ne
 
 ### Combined notes from all sources
 
-- * MAGIC:Connecticut_Griswold_1625 (circa 1625 Native Americans, drawn 1930 https://www.flickr.com/photos/uconnlibrariesmagic/3332840235/)
+- * MAGIC:Connecticut_Griswold_1625 (circa 1625 Native Americans, drawn 1930)
 The three Constitution towns:
 - Windsor settled 1633, named 1637
 - Wethersfield settled 1633, named 1637
@@ -188,15 +188,15 @@ Towns carved out of existing towns (or annexed from Massachusetts)
 - Glastonbury, set off from Wethersfield and incorporated, 1692-93
 - Suffield, annexed from Massachusetts to Connecticut, 1749
 - Enfield, annexed from Massachusetts to Connecticut, 1749
-- * MAGIC:Connecticut_Park_1766 (probably inexact boundaries; southern towns appear inside Hartford County; Suffield, Enfield appear; Hartland not yet https://www.flickr.com/photos/uconnlibrariesmagic/3333722298/)
+- * MAGIC:Connecticut_Park_1766
 - East Windsor, incorporated from Windsor, 1768
 - Southington, incorporated from Farmington, 1779
-- * MAGIC:1780_Covens (probably inexact boundaries; southern towns appear inside Hartford County; Hartland not yet https://www.flickr.com/photos/uconnlibrariesmagic/3332887013/)
+- * MAGIC:1780_Covens
 - East Hartford, incorporated from Hartford, 1783
 - Berlin, incorporated from Farmington, Middletown, Wethersfield, 1785
 - Bristol, incorporated from Farmington, 1785
 - Granby, incorporated from Simsbury, 1786. See also minor boundary change in East Windsor (1789, AHCBP CT, p. 33)
-- * MAGIC:Connecticut_Tanner_1796  (more precise than Doolittle_1795; no county line)
+- * MAGIC:Connecticut_Doolittle_1795
 - Hartland, incorporated 1761, then added to Hartford County from Litchfield County, 1796 (AHCBP CT, p. 34). See also minor border changes in Glastonbury, Berlin, Southington, (1796-98).
 - Marlborough, town created from Glastonbury, Hebron (Tolland County), and Colchester (New London County), 1803 (AHCBP CT, p. 36)
 - Granby and Suffield lose territory to Southwick, MA, 1804 (Hooker 1933, p 25-26)
@@ -226,6 +226,8 @@ Towns carved out of existing towns (or annexed from Massachusetts)
 - pre-1873 boundary between Wethersfield and Glastonbury (see http://www.worldcat.org/oclc/49389998)
 - on Newington, Wethersfield, Farmington, and Berlin boundaries, see Charles Burpee, "Chapter LVI: Frontier Parish Confusions," History of Hartford County, volume 2 (1928), pp. 1160-1174.
 - boundaries from 1639 to 1758 are estimated based on AHCBP for Hartford County
+- Hartford town boundary Inexact
+- Borders do not match precisely due to the original map and the georectification process.
 
 ## START again
 - with Marlborough

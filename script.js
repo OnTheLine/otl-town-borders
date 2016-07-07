@@ -62,11 +62,11 @@ function initMap() {
   });
   controlLayers.addBaseLayer(map1625, '1625 map');
 
-  var map1758 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
-    layers: 'MAGIC:Kitchin_1758',
-    attribution: '1758 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
+  var map1766 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
+    layers: 'MAGIC:Connecticut_Park_1766',
+    attribution: '1766 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
   });
-  controlLayers.addBaseLayer(map1758, '1758 map');
+  controlLayers.addBaseLayer(map1766, '1766 map');
 
   var map1780 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
     layers: 'MAGIC:Covens_1780',
