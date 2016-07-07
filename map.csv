@@ -20,16 +20,16 @@ id,chapter,zoom,tile,layer,description,image,source-credit,source-link,lon,lat
 19,1804,10,present,layer/1804.geojson,"In an 1804 border compromise, Granby (red) lost land to neighboring Southwick, Massachusetts, but Suffield (blue) retained its territory.",img/1933Hooker.jpg,Source: 1933 Boundaries of Connecticut,http://www.worldcat.org/oclc/370937,-72.717,41.79
 20,1806,10,present,layer/1806.geojson,"Canton (red) separated from Simsbury, and Burlington (blue) split away from Farmington, in 1806. Although the outline of Hartford County has remained relatively stable from this point onward, interior borders continued to change.",img/line.jpg,,,-72.717,41.79
 21,1811,10,1811 map,layer/1806nofill.geojson,Hartford County towns (overlaid in blue) on an 1811 Connecticut map by Warren Moses and George Gillet.,img/1811Warren.jpg,"Source: 1811 Warren map, UConn MAGIC",http://magic.lib.uconn.edu/historical_maps_connecticut.html,-72.717,41.79
-22,1823,10,present,layer/1823.geojson,,img/line.jpg,,,-72.717,41.79
-23,1830,10,present,layer/1830.geojson,,img/line.jpg,,,-72.717,41.79
-24,1835,10,present,layer/1835.geojson,"Bloomfield incorporated from Windsor, Farmington, and Simsbury in 1835-1843",img/line.jpg,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
-25,1843,10,present,layer/1843.geojson,Rocky Hill incorporated from Wethersfield in 1843,img/line.jpg,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
-26,1845,10,present,layer/1845.geojson,South Windsor incorporated from East Windsor in 1845,img/line.jpg,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
-27,1850,10,present,layer/1850.geojson,New Britain incorporated from Berlin in 1850,img/line.jpg,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
-28,1854,10,present,layer/1854.geojson,"West Hartford incorporated from Hartford, and Windsor Locks incorporated from Windsor, in 1854",img/line.jpg,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
-29,1855,10,1855 map,layer/1855.geojson,Hartford county as it appeared in Woodford's 1855 map,img/line.jpg,Source: to come,http://magic.lib.uconn.edu/historical_maps_connecticut.html,-72.717,41.79
-30,1858,10,present,layer/1858.geojson,East Granby incorporated from Granby and Windsor Locks in 1858,img/line.jpg,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
-31,1869,10,present,layer/1869.geojson,Plainville incorporated from Farmington in 1869,img/line.jpg,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
-32,1871,10,present,layer/1871.geojson,Newington incorporated from Wethersfield in 1871,img/line.jpg,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
-33,1893,10,1893 map,layer/1871.geojson,Hurd 1893 map,img/line.jpg,,http://magic.lib.uconn.edu/historical_maps_connecticut.html,-72.717,41.79
-34,Present,10,present,layer/present.geojson,The towns of Hartford County as they have existed from 1871 to the present,img/line.jpg,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
+22,1823,10,present,layer/1823.geojson,Manchester incorporated as its own town when it broke away from East Hartford in 1823.,img/line.jpg,,,-72.717,41.79
+23,1830,10,present,layer/1830.geojson,Avon officially became a town when it divided from the north side of Farmington in 1830.,img/line.jpg,,,-72.717,41.79
+24,1835,10,present,layer/1835.geojson,"Bloomfield incorporated as a town in 1835, and its borders expanded in the early 1840s. The area was originally named Wintonbury because its land came from three neighboring towns: Windsor, Farmington, and Simsbury. ",img/line.jpg,,,-72.717,41.79
+25,1843,10,present,layer/1843.geojson,"Rocky Hill incorporated as a town in 1843, when it separated from Wethersfield.",img/line.jpg,,,-72.717,41.79
+26,1845,10,present,layer/1845.geojson,"South Windsor officially became a town in 1845, when it divided from East Windsor.",img/line.jpg,,,-72.717,41.79
+27,1850,10,present,layer/1850.geojson,"New Britain officially became a town when it split from Berlin in 1850, and later incorporated as a city in 1871.",img/line.jpg,,,-72.717,41.79
+28,1854,10,present,layer/1854.geojson,"The ""West Division"" broke away from Hartford to establish the town of West Hartford (red) in 1854. That same year, Windsor Locks (blue) incorporated as a separate town from Windsor.",img/line.jpg,,,-72.717,41.79
+29,1855,10,1855 map,layer/1854nofill.geojson,Hartford County towns (overlaid in blue) on E.M. Woodford's 1855 map.,img/1855Woodford.jpg,"Source: 1855 Woodford map, UConn MAGIC",http://magic.lib.uconn.edu/historical_maps_connecticut.html,-72.717,41.79
+30,1858,10,present,layer/1858.geojson,"East Granby incorporated in 1858, on land drawn from Granby and Windsor Locks.",img/line.jpg,,,-72.717,41.79
+31,1869,10,present,layer/1869.geojson,"Plainville formally became its own town when it split from Farmington in 1869. Since its founding in 1640, Farmington subdivided into nine separate towns.",img/line.jpg,,,-72.717,41.79
+32,1871,10,present,layer/1871.geojson,"Newington, the most recent town in Hartford County, was created when it separated from Wethersfield in 1871.",img/line.jpg,,,-72.717,41.79
+33,1893,10,1893 map,layer/1871.geojson,Hartford County towns (overlaid in blue) on an 1893 Connecticut atlas by E.M. Hurd.,img/1893Hurd.jpg,"Source: 1893 Hurd map, UConn MAGIC",http://magic.lib.uconn.edu/historical_maps_connecticut.html,-72.717,41.79
+34,Present,10,present,layer/present.geojson,The towns of Hartford County as their boundaries have remained from 1871 to the present.,img/line.jpg,,,-72.717,41.79
