@@ -1,35 +1,35 @@
 id,chapter,zoom,tile,layer,description,image,source-credit,source-link,lon,lat
-1,circa 1625,10,1625 map,layer/presentcounty.geojson,"Indigenous River tribes (such as the Tunxis, Poquonnuc, and Podunk) resided on land that Dutch and English settlers claimed and later converted into today's Hartford County (in blue). This map of the 1620s, created by Hayden Griswold in 1930, imagined well-defined borders among native people, similar to today's town boundaries.",img/1620sGriswoldMap.jpg,"Source: 1620s Griswold map, UConn MAGIC",https://www.flickr.com/photos/uconnlibrariesmagic/3332840235/,-72.717,41.79
-2,1633-39,10,present,layer/1639.geojson,"The first three European settlements -- Windsor (red), Hartford (blue) and Wethersfield (green) -- became known as the Constitution Towns for adopting principles of self-governance in 1639.",,,,-72.717,41.79
-3,1640,10,present,layer/1645.geojson,Farmington officially became a town in 1645.,,,,-72.717,41.79
-4,1666,10,present,layer/1666townscounty.geojson,"When Hartford County was first established as one of Connecticut's original four counties in 1666 (red), its boundary stretched further south than today (blue).",,,,-72.717,41.79
-5,1670,10,present,layer/1670.geojson,,,,,-72.717,41.79
-6,1692,10,present,layer/1692.geojson,,,,,-72.717,41.79
-7,1722,10,present,layer/1722townscounty.geojson,text to come here,,,,-72.717,41.79
-8,1749,10,present,layer/1749.geojson,,,,,-72.717,41.79
-9,1758,10,1758 map,,Kitchin 1758 WMS map layer ,img/pending.png,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
-10,1768,10,present,layer/1768.geojson,,,,,-72.717,41.79
-11,1779,10,present,layer/1779.geojson,,,,,-72.717,41.79
-12,1780,10,1780 map,,Covens 1780,,,,-72.717,41.79
-13,1783,10,present,layer/1783.geojson,,,,,-72.717,41.79
-14,1785,10,present,layer/1785.geojson,,,,,-72.717,41.79
-15,1786,10,present,layer/1786.geojson,,,,,-72.717,41.79
-16,1795,10,1795 map,,"Doolittle's 1795 map matches the modern county outline, except for Marlborough",img/pending.png,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
-17,1796,10,present,layer/1796.geojson,,,,,-72.717,41.79
-18,1803,10,present,layer/1803.geojson,,,,,-72.717,41.79
-19,1804,10,present,layer/1804.geojson,,,,,-72.717,41.79
-20,1806,10,present,layer/1806.geojson,,,,,-72.717,41.79
-21,1811,10,1811 map,layer/1811.geojson,Hartford county as it appeared in Warren's 1811 map (borders from 1835 to be revised),img/pending.png,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
-22,1823,10,present,layer/1823.geojson,,,,,-72.717,41.79
-23,1830,10,present,layer/1830.geojson,,,,,-72.717,41.79
-24,1835,10,present,layer/1835.geojson,"Bloomfield incorporated from Windsor, Farmington, and Simsbury in 1835-1843",img/pending.png,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
-25,1843,10,present,layer/1843.geojson,Rocky Hill incorporated from Wethersfield in 1843,img/pending.png,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
-26,1845,10,present,layer/1845.geojson,South Windsor incorporated from East Windsor in 1845,img/pending.png,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
-27,1850,10,present,layer/1850.geojson,New Britain incorporated from Berlin in 1850,img/pending.png,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
-28,1854,10,present,layer/1854.geojson,"West Hartford incorporated from Hartford, and Windsor Locks incorporated from Windsor, in 1854",img/pending.png,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
-29,1855,10,1855 map,layer/1855.geojson,Hartford county as it appeared in Woodford's 1855 map,img/pending.png,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
-30,1858,10,present,layer/1858.geojson,East Granby incorporated from Granby and Windsor Locks in 1858,img/pending.png,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
-31,1869,10,present,layer/1869.geojson,Plainville incorporated from Farmington in 1869,img/pending.png,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
-32,1871,10,present,layer/1871.geojson,Newington incorporated from Wethersfield in 1871,img/pending.png,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
-33,1893,10,1893 map,,Hurd 1893 map,,,,-72.717,41.79
-34,Present,10,present,layer/present.geojson,The towns of Hartford County as they have existed from 1871 to the present,img/pending.png,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
+1,circa 1625,10,1625 map,layer/presentcounty.geojson,"Indigenous River tribes (such as the Tunxis, Poquonnuc, and Podunk) lived on the land that European settlers later converted into today's Hartford County (overlaid in blue). This map of the 1620s, created by Hayden Griswold in 1930, imagined well-defined borders among native people, similar to today's town boundaries.",img/1620sGriswold.jpg,"Source: 1620s Griswold map, UConn MAGIC",http://magic.lib.uconn.edu/historical_maps_connecticut.html,-72.717,41.79
+2,1633-39,10,present,layer/1639.geojson,"The first three English settlements on the Connecticut River-- Windsor (red), Hartford (blue) and Wethersfield (green) -- later became known as the Constitution Towns, for adopting principles of self-governance in the Fundamental Orders of 1639.",img/line.jpg,,,-72.717,41.79
+3,1640,10,present,layer/1645.geojson,"Farmington incorporated as a town in 1645, after English farmers moved to the west of the three original settlements.",img/line.jpg,,,-72.717,41.79
+4,1666,9,present,layer/1666townscounty.geojson,"Hartford County was established as one of Connecticut's four original counties in 1666, and stretched southward to include territory not inside the county today, such as Middletown.",img/line.jpg,,,-72.717,41.79
+5,1670,10,present,layer/1670.geojson,"Simsbury officially became a town in 1670, by a petition of English settlers to the colonial government.",img/line.jpg,,,-72.717,41.79
+6,1693,10,present,layer/1693.geojson,"Glastonbury incorporated as a town in 1693, when residents on the eastern bank of the Connecticut River received permission to split off from Wethersfield.",img/line.jpg,,,-72.717,41.79
+7,1722,9,present,layer/1722townscounty.geojson,"Hartford County expanded many times to its largest extent in 1722 (shown in red), stretching to Waterbury in the west and Windham in the east. Later, these borders retracted due to the creation of three new counties: Litchfield (1751), Tolland, and Middlesex (both in 1785). ",img/line.jpg,,,-72.717,41.79
+8,1749,10,present,layer/1749.geojson,"Suffield (red) and Enfield (blue) became towns in Hartford County when annexed from Massachusetts in 1749. Somers also joined Connecticut, but later became part of Tolland County.",img/line.jpg,,,-72.717,41.79
+9,1766,10,1766 map,layer/1749nofill.geojson,Towns in the Hartford area (overlaid in blue) on a 1766 map of the Connecticut colony by Moses Park. Borders may not match precisely due to the original map and georectification process.,img/1766Park.jpg,"Source: 1766 Park map, UConn MAGIC",http://magic.lib.uconn.edu/historical_maps_connecticut.html,-72.717,41.79
+10,1768,10,present,layer/1768.geojson,"East Windsor incorporated in 1768, when residents on the eastern bank of the Connecticut River received permission to separate from Windsor. Also, Simsbury and Suffield expanded northward when Connecticut unilaterally extended its border into Massachusetts in 1774.",img/line.jpg,,,-72.717,41.79
+11,1779,10,present,layer/1779.geojson,"Southington was formally established as a town in 1779, when residents of ""South Farmington"" separated from Farmington and shortened their community name. ",img/line.jpg,,,-72.717,41.79
+12,1780,10,1780 map,layer/1779nofill.geojson,"Towns in the Hartford area (overlaid in blue) on a 1780 Connecticut map, by Covens and Mortier in Amsterdam. Borders may not match precisely due to the original map and georectification process.",img/1780Covens.jpg,"Source: 1780 Covens map, UConn MAGIC",http://magic.lib.uconn.edu/historical_maps_connecticut.html,-72.717,41.79
+13,1783,10,present,layer/1783.geojson,"East Hartford officially became a town in 1783, when residents on the east bank of the Connecticut River separated from Hartford.",img/line.jpg,,,-72.717,41.79
+14,1785,10,present,layer/1785.geojson,Bristol (red) and Berlin (blue) incorporated as towns when they separated from Farmington in 1785.,img/line.jpg,,,-72.717,41.79
+15,1786,10,present,layer/1786.geojson,"Granby incorporated in 1786, when residents on the north side of Simsbury separated to form their own town. Also, East Windsor had a small change in its border with Tolland County in 1789.",img/line.jpg,,,-72.717,41.79
+16,1795,10,1795 map,layer/1786nofill.geojson,Towns in the Hartford area (overlaid in blue) on a 1795 map of Connecticut by Amos Doolittle. Borders may not match precisely due to the original map and georectification process.,img/1795Doolittle.jpg,"Source: 1795 Doolittle map, UConn MAGIC",http://magic.lib.uconn.edu/historical_maps_connecticut.html,-72.717,41.79
+17,1796,10,present,layer/1796.geojson,"Although Hartland incorporated in 1761, the town did not become part of Hartford County until it was transferred from Litchfield County in 1796. ",img/line.jpg,,,-72.717,41.79
+18,1803,10,present,layer/1803.geojson,"Marlborough became a town in 1803, created from Glastonbury, Hebron (Tolland County), and Colchester (New London County). Also, Glastonbury, Berlin, and Southington had minor border changes from 1796-98.",img/line.jpg,,,-72.717,41.79
+19,1804,10,present,layer/1804.geojson,"In an 1804 border compromise, Granby (red) lost land to neighboring Southwick, Massachusetts, but Suffield (blue) retained its territory.",img/1933Hooker.jpg,Source: 1933 Boundaries of Connecticut,http://www.worldcat.org/oclc/370937,-72.717,41.79
+20,1806,10,present,layer/1806.geojson,"Canton (red) separated from Simsbury, and Burlington (blue) split away from Farmington, in 1806. Although the outline of Hartford County has remained relatively stable from this point onward, interior borders continued to change.",img/line.jpg,,,-72.717,41.79
+21,1811,10,1811 map,layer/1806nofill.geojson,Hartford County towns (overlaid in blue) on an 1811 Connecticut map by Warren Moses and George Gillet.,img/1811Warren.jpg,"Source: 1811 Warren map, UConn MAGIC",http://magic.lib.uconn.edu/historical_maps_connecticut.html,-72.717,41.79
+22,1823,10,present,layer/1823.geojson,,img/line.jpg,,,-72.717,41.79
+23,1830,10,present,layer/1830.geojson,,img/line.jpg,,,-72.717,41.79
+24,1835,10,present,layer/1835.geojson,"Bloomfield incorporated from Windsor, Farmington, and Simsbury in 1835-1843",img/line.jpg,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
+25,1843,10,present,layer/1843.geojson,Rocky Hill incorporated from Wethersfield in 1843,img/line.jpg,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
+26,1845,10,present,layer/1845.geojson,South Windsor incorporated from East Windsor in 1845,img/line.jpg,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
+27,1850,10,present,layer/1850.geojson,New Britain incorporated from Berlin in 1850,img/line.jpg,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
+28,1854,10,present,layer/1854.geojson,"West Hartford incorporated from Hartford, and Windsor Locks incorporated from Windsor, in 1854",img/line.jpg,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
+29,1855,10,1855 map,layer/1855.geojson,Hartford county as it appeared in Woodford's 1855 map,img/line.jpg,Source: to come,http://magic.lib.uconn.edu/historical_maps_connecticut.html,-72.717,41.79
+30,1858,10,present,layer/1858.geojson,East Granby incorporated from Granby and Windsor Locks in 1858,img/line.jpg,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
+31,1869,10,present,layer/1869.geojson,Plainville incorporated from Farmington in 1869,img/line.jpg,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
+32,1871,10,present,layer/1871.geojson,Newington incorporated from Wethersfield in 1871,img/line.jpg,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
+33,1893,10,1893 map,layer/1871.geojson,Hurd 1893 map,img/line.jpg,,http://magic.lib.uconn.edu/historical_maps_connecticut.html,-72.717,41.79
+34,Present,10,present,layer/present.geojson,The towns of Hartford County as they have existed from 1871 to the present,img/line.jpg,Source: to come,http://ontheline.trincoll.edu,-72.717,41.79
