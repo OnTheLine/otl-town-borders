@@ -104,14 +104,6 @@ function initMap() {
   }).addTo(map);
   controlLayers.addBaseLayer(lightAll, 'present');
 
-  //  TO DO: Add star on modern State Capitol and prevent removal?
-  var starIcon = L.icon({
-    iconUrl: 'img/star-18.png',
-    iconRetinaUrl: 'img/star-18@2x.png',
-    iconSize: [18, 18]
-  });
-  L.marker([41.7646, -72.6823], {icon: starIcon}).addTo(map);
-
   // This loads the GeoJSON map data file from a local folder
   $.getJSON('map.geojson', function(data) {
     var geojson = L.geoJson(data, {
