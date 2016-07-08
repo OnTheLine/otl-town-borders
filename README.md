@@ -17,9 +17,9 @@ Scroll-driven story map of Hartford County, Connecticut town borders, with narra
 
 ## Historical sources
 
-See narrative text in map.csv (easy to edit in any spreadsheet tool, manually synced into map.geojson with http://geojson.io)
-
 Boundaries shown here are NOT exact, but approximated from the best available digital sources:
+- Began with present-day Hartford County town boundaries at 1:100,000 scale from UConn Libraries MAGIC / US Census http://magic.lib.uconn.edu/connecticut_data.html#boundaries
+- Working backward in time, edited boundaries to match historical sources listed below
 - UConn Libraries MAGIC historical maps http://magic.lib.uconn.edu, specifically these layers on their WMS server http://geoserver.lib.uconn.edu:8080/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.demo.MapPreviewPage
   - MAGIC:Connecticut_Griswold_1625
   - MAGIC:Connecticut_Park_1766
@@ -31,20 +31,23 @@ Boundaries shown here are NOT exact, but approximated from the best available di
 - Atlas of Historical County Boundaries at Newberry Library (Connecticut narrative and GIS files) http://publications.newberry.org/ahcbp/pages/Connecticut.html
 - Connecticut State Register and Manual, Connecticut Towns in the Order of their Establishment (last updated 2008) http://www.ct.gov/sots/cwp/view.asp?a=3188&q=392440
 - Roland Mather Hooker, Boundaries of Connecticut (New Haven: Published for the Tercentenary Commission by the Yale University Press, 1933), http://www.worldcat.org/oclc/370937
-- Also consulted other digital map repositories (http://www.davidrumsey.com/home
- and http://maps.nypl.org/warper/ and http://mapwarper.net), but did not find any sources that added new info for this purpose, with possible exception of 1842 Morse map described in known issues.
+- “Map of the School Districts of the City of Hartford,” 1917, georectified at http://mapwarper.net/maps/14781, from the “Sanborn Fire Insurance Map from Hartford, Hartford County, Connecticut.,” map (1917), Library of Congress, https://www.loc.gov/item/sanborn01132_004/.
+
+Also consulted other digital map repositories:
+- David Rumsey map collection http://www.davidrumsey.com/home
+- NYPL map collection http://maps.nypl.org/warper/
+- MapWarper http://mapwarper.net
+
+But did not find any sources that added new info for this purpose, with possible exception of 1842 Morse map described in known issues section.
 
 For historical background, start with:
 - Diana Ross McCain, “Andover to Woodstock: How Connecticut Ended Up with 169 Towns,” ConnecticutHistory.org, 2016, http://connecticuthistory.org/andover-to-woodstock-how-connecticut-ended-up-with-169-towns/.
 - Kristen N. Keegan and William F. Keegan, “Exploring Early Connecticut Mapmaking,” ConnecticutHistory.org, 2012, http://connecticuthistory.org/exploring-early-connecticut-mapmaking/.
 - Robert Baron, “Surveying Connecticut’s Borders,” ConnecticutHistory.org, 2012, http://connecticuthistory.org/surveying-connecticuts-borders/.
 
-
 ## Known border issues
 
 The following borders are based on best estimates from available digital sources, and do not include detailed archival research. If you have better information, please share.
-
-- unclear border between Hartford and Windsor/Bloomfield from 1600s into early 1800s
 
 - unclear borders between West Hartford, Farmington, Avon, and Bloomfield in 1840s-50s. See NYPL 1842 Morse map (http://maps.nypl.org/warper/maps/7363) that displays smaller initial boundary for Bloomfield, but cannot use until georectification is improved.
 ```
@@ -57,18 +60,18 @@ The following borders are based on best estimates from available digital sources
 
 - on border between Wethersfield and Glastonbury prior to 1873, see Glastonbury town statement from that year, http://www.worldcat.org/oclc/49389998
 
-- boundaries from 1639 to 1758 are estimated based on AHCBP for Hartford County
+- town boundaries on the edges of Hartford County from 1639 to 1806 are based on Atlas of Historical County Boundaries Project, but boundaries inside the county outline are estimated
 
 Also, note that borders and historical maps may not match precisely due to the original source and the georectification process.
 
 ## How it works
-- All of the narrative text and map data are stored in open-source formats (csv and GeoJson), separate from the open-source Leaflet Javascript mapping code, for historical preservation and future platform migration.
-- The narrative text and zoom points are stored in map.csv (editable in any spreadsheet tool), then converted into map.geojson with the http://geojson.io tool
-- Boundary layers were edited in QGIS, exported into GeoJson files in the layer folder, and referenced by year in map.csv
+- All of the narrative text and map data are stored in open-source formats (csv and GeoJSON), separate from the open-source Leaflet Javascript mapping code (index.html, script.js, and style.css), for historical preservation and future platform migration.
+- The narrative text and zoom points are stored in map.csv (editable in any spreadsheet tool), then converted into map.geojson with the http://geojson.io tool, which is read by the script.js code.
+- Boundary layers were edited in QGIS, saved for any future edits in Esri GIS format (in qgis folder), and exported into GeoJson files (in layer folder), and referenced by year in map.csv
 - Background map tile layers are listed in script.js, and referenced by year in map.csv. Historical map tile layers are hosted on a WMS server at UConn Libraries MAGIC.
 - Selected images are stored in the img folder and referenced in map.csv
 - The storymap title can be modified in index.html
-- Thanks @ilyankou for creative solution on using jQuery to imitate "click" in legend control layers radio button to change tile layers. In this version, the legend is hidden in style.css, with option to display if desired.
+- The code uses jQuery to imitate "click" in legend control layers radio button to change tile layers. In this version, the legend is hidden in style.css, with option to display if desired.
 - Note: If for some reason the last chapter doesn't get active (the case for big screen sizes), replace value of areaTop in script.js from -100 to -200 or more.
 - Learn more about related Leaflet Storymap code templates in http://DataVizForAll.org
 
