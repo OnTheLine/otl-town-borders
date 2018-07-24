@@ -1,5 +1,5 @@
 # otl-town-borders
-Scroll-driven story map of Hartford County, Connecticut town borders, with narrative text and ability to insert tile layers and GeoJSON layers
+Scroll-driven historical story map of Hartford County, Connecticut town borders, with narrative text and ability to insert tile layers and GeoJSON layers
 
 ## Link
 - https://ontheline.github.io/otl-town-borders/index-frame.html
