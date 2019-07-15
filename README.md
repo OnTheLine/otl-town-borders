@@ -5,7 +5,7 @@ Scroll-driven historical story map of Hartford County, Connecticut town borders,
 - https://ontheline.github.io/otl-town-borders/index-caption.html
 
 ## Embedded inside On The Line book http://ontheline.trincoll.edu
-- set iframe height 500px
+- set iframe height 600px
 
 ## Based on
 - http://github.com/jackdougherty/leaflet-storymap-layers
