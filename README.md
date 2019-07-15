@@ -1,13 +1,11 @@
 # otl-town-borders
 Scroll-driven historical story map of Hartford County, Connecticut town borders, with narrative text and ability to insert tile layers and GeoJSON layers
 
-## Link
-- https://ontheline.github.io/otl-town-borders/index-frame.html
+## Demo
+- https://ontheline.github.io/otl-town-borders/index-caption.html
 
-## Embed in [On The Line book](http://ontheline.trincoll.edu)
-```
-<iframe src="https://ontheline.github.io/otl-town-borders/index.html" width="100%" height=500></iframe>
-```
+## Embedded inside On The Line book http://ontheline.trincoll.edu
+- set iframe height 500px
 
 ## Based on
 - http://github.com/jackdougherty/leaflet-storymap-layers
