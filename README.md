@@ -7,11 +7,9 @@ Scroll-driven historical story map of Hartford County, Connecticut town borders,
 ## Embedded inside On The Line book http://ontheline.trincoll.edu
 - set iframe height 600px
 
-## Based on
-- http://github.com/jackdougherty/leaflet-storymap-layers
-
 ## Credits
 - Thanks @ilyankou for coding the add/remove tiles and layers with the scrolling interface  
+- Learn more about related Leaflet Storymap code templates in http://DataVizForAll.org
 
 ## Historical sources
 
@@ -43,6 +41,9 @@ For historical background, start with:
 - Kristen N. Keegan and William F. Keegan, “Exploring Early Connecticut Mapmaking,” ConnecticutHistory.org, 2012, http://connecticuthistory.org/exploring-early-connecticut-mapmaking/.
 - Robert Baron, “Surveying Connecticut’s Borders,” ConnecticutHistory.org, 2012, http://connecticuthistory.org/surveying-connecticuts-borders/.
 
+## Known tech issues
+- appears as "not secure" in browsers because several UConn MAGIC WMS historical map layers are on non-secure (http) server. Requested that MAGIC update to https several times.
+
 ## Known border issues
 
 The following borders are based on best estimates from available digital sources, and do not include detailed archival research. If you have better information, please share.
@@ -64,7 +65,7 @@ Also, note that borders and historical maps may not match precisely due to the o
 
 ## How it works
 - All of the narrative text and map data are stored in open-source formats (csv and GeoJSON), separate from the open-source Leaflet Javascript mapping code (index.html, script.js, and style.css), for historical preservation and future platform migration.
-- The narrative text and zoom points are stored in map.csv (editable in any spreadsheet tool), then converted into map.geojson with the http://geojson.io tool, which is read by the script.js code.
+- The narrative text and zoom points are stored in map.csv (editable in any spreadsheet tool), then converted into map.geojson with the http://geojson.io tool, which is read by the script.js code. **Make all edits to narrative, zoom, layers in map.geojson**
 - Boundary layers were edited in QGIS, saved for any future edits in Esri GIS format (in qgis folder), and exported into GeoJson files (in layer folder), and referenced by year in map.csv
 - Background map tile layers are listed in script.js, and referenced by year in map.csv. Historical map tile layers are hosted on a WMS server at UConn Libraries MAGIC.
 - Selected images are stored in the img folder and referenced in map.csv
