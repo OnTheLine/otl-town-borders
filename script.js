@@ -54,49 +54,96 @@ function initMap() {
     collapsed: false // false = open by default
   }).addTo(map);
 
-  // tileLayer.WMS as a baselayer - see http://leafletjs.com/reference.html#tilelayer-wms
-  // UConn MAGIC WMS settings - see http://geoserver.lib.uconn.edu:8080/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.demo.MapPreviewPage
-  var map1625 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
-    layers: 'MAGIC:Connecticut_Griswold_1625',
-    attribution: 'c1625 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
+// Katie Fiducia at UConn Libraries uploaded historical map layers to personal ArcGIS account in 2026
+// https://www.arcgis.com/home/group.html?sortField=modified&sortOrder=desc&id=16b921f20eb643e4a5a6f482524bf5c3#content
+// open ArcGIS tile layer and copy the URL from right-hand column
+
+  var map1625 = L.esri.tiledMapLayer({
+    url: "https://tiles.arcgis.com/tiles/6ItOFXGFmdtfeOZb/arcgis/rest/services/Griswold_1625/MapServer",
+    attribution: '<a href="https://www.arcgis.com/home/group.html?id=16b921f20eb643e4a5a6f482524bf5c3#overview" target="_blank">Griswold c1625/1930 UConn Libraries</a>'
   });
   controlLayers.addBaseLayer(map1625, '1625 map');
 
-  var map1766 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
-    layers: 'MAGIC:Connecticut_Park_1766',
-    attribution: '1766 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
+  var map1766 = L.esri.tiledMapLayer({
+    url: "https://tiles.arcgis.com/tiles/6ItOFXGFmdtfeOZb/arcgis/rest/services/Park1766/MapServer",
+    attribution: '<a href="https://www.arcgis.com/home/group.html?id=16b921f20eb643e4a5a6f482524bf5c3#overview" target="_blank">Park 1766 UConn Libraries</a>'
   });
   controlLayers.addBaseLayer(map1766, '1766 map');
 
-  var map1780 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
-    layers: 'MAGIC:Covens_1780',
-    attribution: '1780 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
+  var map1780 = L.esri.tiledMapLayer({
+    url: "https://tiles.arcgis.com/tiles/6ItOFXGFmdtfeOZb/arcgis/rest/services/Covens_1780/MapServer",
+    attribution: '<a href="https://www.arcgis.com/home/group.html?id=16b921f20eb643e4a5a6f482524bf5c3#overview" target="_blank">Covens 1780 UConn Libraries</a>'
   });
   controlLayers.addBaseLayer(map1780, '1780 map');
 
-  var map1795 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
-    layers: 'MAGIC:Connecticut_Doolittle_1795',
-    attribution: '1795 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
+  var map1795 = L.esri.tiledMapLayer({
+    url: "https://tiles.arcgis.com/tiles/6ItOFXGFmdtfeOZb/arcgis/rest/services/Doolittle_1795/MapServer",
+    attribution: '<a href="https://www.arcgis.com/home/group.html?id=16b921f20eb643e4a5a6f482524bf5c3#overview" target="_blank">Doolittle 1795 UConn Libraries</a>'
   });
   controlLayers.addBaseLayer(map1795, '1795 map');
 
-  var map1811 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
-    layers: 'MAGIC:1811_Warren',
-    attribution: '1811 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
+  var map1811 = L.esri.tiledMapLayer({
+    url: "https://tiles.arcgis.com/tiles/6ItOFXGFmdtfeOZb/arcgis/rest/services/Warren_1811/MapServer",
+    attribution: '<a href="https://www.arcgis.com/home/group.html?id=16b921f20eb643e4a5a6f482524bf5c3#overview" target="_blank">Warren 1811 UConn Libraries</a>'
   });
   controlLayers.addBaseLayer(map1811, '1811 map');
 
-  var map1855 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
-    layers: 'MAGIC:HartfordCounty_Woodford_1855',
-    attribution: '1855 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
+  var map1855 = L.esri.tiledMapLayer({
+    url: "https://tiles.arcgis.com/tiles/6ItOFXGFmdtfeOZb/arcgis/rest/services/Woodford_HartfordCounty_1855/MapServer",
+    attribution: '<a href="https://www.arcgis.com/home/group.html?id=16b921f20eb643e4a5a6f482524bf5c3#overview" target="_blank">Woodford 1855 UConn Libraries</a>'
   });
   controlLayers.addBaseLayer(map1855, '1855 map');
 
-  var map1893 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
-    layers: 'MAGIC:Hurd_1893_page_12_13',
-    attribution: '1893 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
+  var map1893 = L.esri.tiledMapLayer({
+    url: "https://tiles.arcgis.com/tiles/6ItOFXGFmdtfeOZb/arcgis/rest/services/Hurd_1893/MapServer",
+    attribution: '<a href="https://www.arcgis.com/home/group.html?id=16b921f20eb643e4a5a6f482524bf5c3#overview" target="_blank">Hurd 1893 p12-13 UConn Libraries</a>'
   });
   controlLayers.addBaseLayer(map1893, '1893 map');
+
+  // DEPRECATED UConn MAGIC WMS code
+  // tileLayer.WMS as a baselayer - see http://leafletjs.com/reference.html#tilelayer-wms
+  // UConn MAGIC WMS settings - see http://geoserver.lib.uconn.edu:8080/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.demo.MapPreviewPage
+  // var map1625 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
+  //   layers: 'MAGIC:Connecticut_Griswold_1625',
+  //   attribution: 'c1625 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
+  // });
+  // controlLayers.addBaseLayer(map1625, '1625 map');
+
+  // var map1766 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
+  //   layers: 'MAGIC:Connecticut_Park_1766',
+  //   attribution: '1766 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
+  // });
+  // controlLayers.addBaseLayer(map1766, '1766 map');
+  //
+  // var map1780 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
+  //   layers: 'MAGIC:Covens_1780',
+  //   attribution: '1780 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
+  // });
+  // controlLayers.addBaseLayer(map1780, '1780 map');
+  //
+  // var map1795 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
+  //   layers: 'MAGIC:Connecticut_Doolittle_1795',
+  //   attribution: '1795 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
+  // });
+  // controlLayers.addBaseLayer(map1795, '1795 map');
+  //
+  // var map1811 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
+  //   layers: 'MAGIC:1811_Warren',
+  //   attribution: '1811 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
+  // });
+  // controlLayers.addBaseLayer(map1811, '1811 map');
+  //
+  // var map1855 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
+  //   layers: 'MAGIC:HartfordCounty_Woodford_1855',
+  //   attribution: '1855 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
+  // });
+  // controlLayers.addBaseLayer(map1855, '1855 map');
+  //
+  // var map1893 = new L.tileLayer.wms("http://geoserver.lib.uconn.edu:8080/geoserver/MAGIC/wms?", {
+  //   layers: 'MAGIC:Hurd_1893_page_12_13',
+  //   attribution: '1893 <a href="http://magic.library.uconn.edu">MAGIC UConn</a>'
+  // });
+  // controlLayers.addBaseLayer(map1893, '1893 map');
 
   // This displays the default tile layer
   var lightAll = new L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {

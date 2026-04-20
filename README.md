@@ -8,15 +8,16 @@ Scroll-driven historical story map of Hartford County, Connecticut town borders,
 - set iframe height 600px
 
 ## Credits
-- Thanks @ilyankou for coding the add/remove tiles and layers with the scrolling interface  
-- Learn more about related Leaflet Storymap code templates in http://DataVizForAll.org
+- Thanks @ilyankou for coding the add/remove tiles and layers with the scrolling interface
+- Thanks to UConn Library staff Michael Howser and Katie Fiducia for hosting historical map tile layers 
+- Learn more about related Leaflet Storymap code templates in https://HandsOnDataViz.org
 
 ## Historical sources
 
 Boundaries shown here are NOT exact, but approximated from the best available digital sources:
 - Began with present-day Hartford County town boundaries at 1:100,000 scale from UConn Libraries MAGIC / US Census http://magic.lib.uconn.edu/connecticut_data.html#boundaries
 - Working backward in time, edited boundaries to match historical sources listed below
-- UConn Libraries MAGIC historical maps http://magic.lib.uconn.edu, specifically these layers on their WMS server http://geoserver.lib.uconn.edu:8080/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.demo.MapPreviewPage
+- Currently, UConn Libraries historical map tile layers are hosted by librarian Katie Fiducia on their ArcGIS account https://www.arcgis.com/home/group.html?id=16b921f20eb643e4a5a6f482524bf5c3#overview. Previously, UConn Libraries MAGIC (old link) http://magic.lib.uconn.edu provided these layers on their WMS server (old link) http://geoserver.lib.uconn.edu:8080/geoserver/web/?wicket:bookmarkablePage=:org.geoserver.web.demo.MapPreviewPage
   - MAGIC:Connecticut_Griswold_1625
   - MAGIC:Connecticut_Park_1766
   - MAGIC:Covens_1780
@@ -41,9 +42,6 @@ For historical background, start with:
 - Kristen N. Keegan and William F. Keegan, “Exploring Early Connecticut Mapmaking,” ConnecticutHistory.org, 2012, http://connecticuthistory.org/exploring-early-connecticut-mapmaking/.
 - Robert Baron, “Surveying Connecticut’s Borders,” ConnecticutHistory.org, 2012, http://connecticuthistory.org/surveying-connecticuts-borders/.
 
-## Known tech issues
-- appears as "not secure" in browsers because several UConn MAGIC WMS historical map layers are on non-secure (http) server. Requested that MAGIC update to https several times.
-
 ## Known border issues
 
 The following borders are based on best estimates from available digital sources, and do not include detailed archival research. If you have better information, please share.
@@ -67,9 +65,9 @@ Also, note that borders and historical maps may not match precisely due to the o
 - All of the narrative text and map data are stored in open-source formats (csv and GeoJSON), separate from the open-source Leaflet Javascript mapping code (index.html, script.js, and style.css), for historical preservation and future platform migration.
 - The narrative text and zoom points are stored in map.csv (editable in any spreadsheet tool), then converted into map.geojson with the http://geojson.io tool, which is read by the script.js code. **Make all edits to narrative, zoom, layers in map.geojson**
 - Boundary layers were edited in QGIS, saved for any future edits in Esri GIS format (in qgis folder), and exported into GeoJson files (in layer folder), and referenced by year in map.csv
-- Background map tile layers are listed in script.js, and referenced by year in map.csv. Historical map tile layers are hosted on a WMS server at UConn Libraries MAGIC.
+- Background map tile layers are listed in script.js, and referenced by year in map.csv. Originally, historical map tile layers are hosted on a WMS server at UConn Libraries MAGIC. Now they are hosted on an ArcGIS Online account by a UConn librarian
 - Selected images are stored in the img folder and referenced in map.csv
 - The storymap title can be modified in index.html
 - The code uses jQuery to imitate "click" in legend control layers radio button to change tile layers. In this version, the legend is hidden in style.css, with option to display if desired.
 - Note: If for some reason the last chapter doesn't get active (the case for big screen sizes), replace value of areaTop in script.js from -100 to -200 or more.
-- Learn more about related Leaflet Storymap code templates in http://DataVizForAll.org
+- Learn more about related Leaflet Storymap code templates in https://handsondataviz.bookmarkablePage
