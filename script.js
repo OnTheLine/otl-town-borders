@@ -54,8 +54,8 @@ function initMap() {
     collapsed: false // false = open by default
   }).addTo(map);
 
-// Katie Fiducia at UConn Libraries uploaded historical map layers to personal ArcGIS account in 2026
-// https://www.arcgis.com/home/group.html?sortField=modified&sortOrder=desc&id=16b921f20eb643e4a5a6f482524bf5c3#content
+// Katie Fiducia at UConn Libraries uploaded historical map layers in 2026 to UConn_MAGIC ArcGIS online account
+// https://www.arcgis.com/home/group.html?id=16b921f20eb643e4a5a6f482524bf5c3#overview
 // open ArcGIS tile layer and copy the URL from right-hand column
 
   var map1625 = L.esri.tiledMapLayer({
