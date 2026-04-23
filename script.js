@@ -229,7 +229,7 @@ function initMap() {
 
                 // This loads the tile layer from map.geojson by imitating a click to the legend control span
                 var tile = feature.properties['tile'];
-                $($('span:contains(" ' + tile + '")').get(0)).siblings("input").click();
+                $('.leaflet-control-layers span').filter(function() { return $(this).text().trim() === tile; }).siblings('input').trigger('click');
               }
             }
           });
