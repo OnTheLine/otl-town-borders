@@ -146,7 +146,7 @@ function initMap() {
   // controlLayers.addBaseLayer(map1893, '1893 map');
 
   // This displays the default tile layer
-  var lightAll = new L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+  var lightAll = new L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=cb1_2lgt_1_9e472fb45845ca23e883e1aa', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
   }).addTo(map);
   controlLayers.addBaseLayer(lightAll, 'present');
